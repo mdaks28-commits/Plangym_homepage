@@ -805,6 +805,24 @@ footer .logo{font-size:22px;color:var(--ink)}
 .att-app b{color:var(--brand)}
 @media (max-width:760px){.apx-p{grid-template-columns:1fr;gap:28px;padding:28px 20px}.apx-t h4{font-size:24px}.apx-phs{gap:12px}.apx-ph{border-width:4px;border-radius:20px}.apx-ph img{border-radius:16px}.apx-ph+.apx-ph{margin-top:24px}.apx-tabs{justify-content:flex-start}}
 
+.tkb{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;background:var(--brand);color:#fff;border-radius:24px;padding:44px 48px;box-shadow:0 30px 60px -40px rgba(47,82,69,.9)}
+.tkb-k{margin:0;font-size:12px;font-weight:700;letter-spacing:.14em;color:#d9c58f}
+.tkb h4{margin:10px 0 0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1.35;color:#fff}
+.tkb h4 em{font-style:normal;color:#e9c98a}
+.tkb-steps{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:12px}
+.tkb-steps li{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px 16px}
+.tkb-n{flex:none;width:28px;height:28px;border-radius:50%;background:#e9c98a;color:#1f2a24;font-weight:800;font-size:14px;display:grid;place-items:center}
+.tkb-steps b{display:block;font-size:16px;color:#fff}
+.tkb-steps p{margin:3px 0 0;font-size:14px;color:rgba(255,255,255,.75);line-height:1.6}
+.tkb-steps strong{color:#e9c98a;font-weight:800}
+.tkb-r{display:flex;flex-direction:column;align-items:center;gap:18px}
+.tkb-shot{margin:0;width:100%;border-radius:20px;overflow:hidden;background:#1b1a4a;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);transform:rotate(-1.5deg)}
+.tkb-shot img{display:block;width:100%;height:auto}
+.tkb-shot figcaption{position:static;background:none;padding:10px 16px;font-size:12px;font-weight:600;color:rgba(255,255,255,.6);text-align:right}
+.tkb-go{display:inline-flex;gap:8px;align-items:center;padding:13px 24px;border-radius:999px;background:#fff;color:var(--brand);font-weight:700;font-size:15px}
+.tkb-go:hover{opacity:.9}
+@media (max-width:860px){.tkb{grid-template-columns:1fr;gap:28px;padding:30px 20px}.tkb h4{font-size:24px}.tkb-shot{transform:none}.tkb-go{width:100%;justify-content:center}}
+
 .appshow{margin-top:48px;background:#1b1640;color:#f1effa;display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding:56px 56px 0;overflow:hidden;border-radius:4px}
 .as-txt{padding-bottom:56px}
 .as-txt .en{font-family:var(--serif);font-size:13px;letter-spacing:.24em;color:#b8acff;font-weight:600}
@@ -1015,9 +1033,22 @@ footer .logo{font-size:22px;color:var(--ink)}
           <div class="gcard"><div class="ghead"><h4>헬스 +10일</h4><span class="x3">출석 가치 3배</span></div><p class="gsub">받기까지 필요한 출석 횟수</p><div class="grow"><span class="lb">등록 시</span><span class="tr"><span class="fill" style="width:72.0%"></span><span class="n">40회</span></span></div><div class="grow"><span class="lb">100회 출석 후</span><span class="tr"><span class="fill" style="width:36.0%"></span><span class="n">20회</span></span></div><div class="grow top"><span class="lb">200회 출석 후</span><span class="tr"><span class="fill" style="width:25.2%"></span><span class="n">14회</span></span></div></div>
           <div class="gcard"><div class="ghead"><h4>PT +1회</h4><span class="x3">출석 가치 3배</span></div><p class="gsub">받기까지 필요한 출석 횟수</p><div class="grow"><span class="lb">등록 시</span><span class="tr"><span class="fill" style="width:72.0%"></span><span class="n">60회</span></span></div><div class="grow"><span class="lb">100회 출석 후</span><span class="tr"><span class="fill" style="width:36.0%"></span><span class="n">30회</span></span></div><div class="grow top"><span class="lb">200회 출석 후</span><span class="tr"><span class="fill" style="width:24.0%"></span><span class="n">20회</span></span></div></div>
         </div>
-        <p class="gfoot"><svg class="tk" viewBox="0 0 24 16" aria-hidden="true"><path d="M2 2h20v4a2 2 0 0 0 0 4v4H2v-4a2 2 0 0 0 0-4z" fill="currentColor"/></svg>출석 1회당 티켓 등록 시 5장 · 100회 출석 후 10장 · 200회 출석 후 15장<br>티켓 200장 = 헬스 10일, 300장 = PT 1회로 바꿀 수 있어요.</p>
       </figure>
-      <a class="att-app" href="#app"><span>출석은 <b style="color:inherit">플랜짐 앱</b>으로 체크하고 모읍니다</span><b>플랜짐 앱 보기 →</b></a>
+      <div class="tkb">
+        <div class="tkb-l">
+          <p class="tkb-k">HOW IT WORKS · 출석이 혜택으로 바뀌는 방법</p>
+          <h4>출석하면 <em>티켓</em>,<br>티켓은 <em>헬스 기간</em>과 <em>PT</em>로</h4>
+          <ol class="tkb-steps">
+            <li><span class="tkb-n">1</span><div><b>출석 1회 = 티켓</b><p>등록 시 <strong>5장</strong> → 100회 출석 후 <strong>10장</strong> → 200회 출석 후 <strong>15장</strong></p></div></li>
+            <li><span class="tkb-n">2</span><div><b>앱에 자동 적립</b><p>입실 QR만 찍으면 플랜짐 앱에 티켓이 쌓여요.</p></div></li>
+            <li><span class="tkb-n">3</span><div><b>원할 때 교환</b><p><strong>200장</strong> = 헬스 10일 · <strong>300장</strong> = PT 1회</p></div></li>
+          </ol>
+        </div>
+        <div class="tkb-r">
+          <figure class="tkb-shot"><img src="img/app-ticket.webp" alt="플랜짐 앱 홈 화면의 티켓 보유량, 재등록 할인, 1회 출석당 티켓" loading="lazy"><figcaption>실제 플랜짐 앱 화면</figcaption></figure>
+          <a class="tkb-go" href="#app">플랜짐 앱 자세히 보기 <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
     </div>
     </div>
 
