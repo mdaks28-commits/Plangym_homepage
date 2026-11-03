@@ -785,6 +785,26 @@ footer .logo{font-size:22px;color:var(--ink)}
 .tr-ev{display:inline-block;margin-top:8px;align-self:flex-start;font-size:13px;font-weight:700;color:#c8752a;background:rgba(200,117,42,.1);padding:5px 12px;border-radius:999px}
 @media (max-width:760px){.wk-cards{grid-template-columns:1fr}.wk-c{padding:24px 20px}.wk-inc{grid-template-columns:1fr}.wk-inc li+li{border-left:0;border-top:1px solid var(--line)}.wk-inc li{padding:14px 18px}.wk-btn{width:100%;text-align:center}.evpill{font-size:12.5px;gap:8px}.wk-pr b{font-size:32px}}
 
+.apx-tabs{justify-content:center}
+.apx{margin-top:28px}
+.apx-p{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;background:var(--soft);border-radius:24px;padding:48px 56px}
+.apx-p[hidden]{display:none}
+.apx-k{margin:0;font-family:var(--serif);font-size:13px;letter-spacing:.16em;font-weight:700;color:var(--brand)}
+.apx-t h4{margin:10px 0 0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1.3}
+.apx-t>p{margin:14px 0 0;font-size:15.5px;line-height:1.75;color:var(--sub)}
+.apx-t ul{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:8px}
+.apx-t li{position:relative;padding-left:26px;font-size:15px;font-weight:500}
+.apx-t li::before{content:"";position:absolute;left:0;top:4px;width:16px;height:16px;border-radius:50%;background:var(--brand-soft,#e3ece8);box-shadow:inset 0 0 0 4px var(--brand)}
+.apx-phs{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.apx-ph{margin:0;border-radius:26px;border:6px solid #1d1d1b;background:#1d1d1b;overflow:hidden;box-shadow:0 24px 40px -24px rgba(0,0,0,.45)}
+.apx-ph+.apx-ph{margin-top:40px}
+.apx-ph img{width:100%;height:auto;display:block;border-radius:20px}
+.apx-foot{margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.apx-foot p{margin:0;font-size:14px;color:var(--sub)}
+.att-app{margin:20px auto 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:18px 24px;border-radius:14px;background:var(--beige);font-size:15px}
+.att-app b{color:var(--brand)}
+@media (max-width:760px){.apx-p{grid-template-columns:1fr;gap:28px;padding:28px 20px}.apx-t h4{font-size:24px}.apx-phs{gap:12px}.apx-ph{border-width:4px;border-radius:20px}.apx-ph img{border-radius:16px}.apx-ph+.apx-ph{margin-top:24px}.apx-tabs{justify-content:flex-start}}
+
 .appshow{margin-top:48px;background:#1b1640;color:#f1effa;display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding:56px 56px 0;overflow:hidden;border-radius:4px}
 .as-txt{padding-bottom:56px}
 .as-txt .en{font-family:var(--serif);font-size:13px;letter-spacing:.24em;color:#b8acff;font-weight:600}
@@ -931,7 +951,7 @@ footer .logo{font-size:22px;color:var(--ink)}
     <nav id="nav" aria-label="주요 메뉴">
       <ul>
         <li><a class="top" href="#about">플랜짐 소개</a>
-          <ul class="sub"><li></li><li><a href="#attendance">출석혜택</a></li><li><a href="#trainers">트레이너 소개</a></li><li><a href="#facility">시설 소개</a></li><li><a href="#hours">운영시간</a></li></ul></li>
+          <ul class="sub"><li></li><li><a href="#attendance">출석혜택</a></li><li><a href="#app">플랜짐 앱</a></li><li><a href="#trainers">트레이너 소개</a></li><li><a href="#facility">시설 소개</a></li><li><a href="#hours">운영시간</a></li></ul></li>
         <li><a class="top" href="#gym">헬스 소개</a>
           <ul class="sub"><li><a href="#tour">머신투어</a></li><li><a href="#reward">출석보상</a></li><li><a href="#gym-price">가격안내</a></li></ul></li>
         <li><a class="top" href="#pt">PT 소개</a>
@@ -979,7 +999,7 @@ footer .logo{font-size:22px;color:var(--ink)}
       <p class="no">01</p>
       <p class="en">ABOUT PLANGYM</p>
       <h2>플랜짐 소개</h2>
-      <nav class="subnav" aria-label="플랜짐 소개 하위 메뉴"><a href="#attendance">출석혜택</a><a href="#trainers">트레이너 소개</a><a href="#facility">시설 소개</a><a href="#hours">운영시간</a></nav>
+      <nav class="subnav" aria-label="플랜짐 소개 하위 메뉴"><a href="#attendance">출석혜택</a><a href="#app">플랜짐 앱</a><a href="#trainers">트레이너 소개</a><a href="#facility">시설 소개</a><a href="#hours">운영시간</a></nav>
     </div>
 
     <div class="part" id="attendance">
@@ -997,20 +1017,45 @@ footer .logo{font-size:22px;color:var(--ink)}
         </div>
         <p class="gfoot"><svg class="tk" viewBox="0 0 24 16" aria-hidden="true"><path d="M2 2h20v4a2 2 0 0 0 0 4v4H2v-4a2 2 0 0 0 0-4z" fill="currentColor"/></svg>출석 1회당 티켓 등록 시 5장 · 100회 출석 후 10장 · 200회 출석 후 15장<br>티켓 200장 = 헬스 10일, 300장 = PT 1회로 바꿀 수 있어요.</p>
       </figure>
-      <div class="appshow">
-        <div class="as-txt">
-          <p class="en">PLANGYM APP</p>
-          <h4>출석을 하면 할수록<br>출석의 가치가 올라갑니다</h4>
-          <p>플랜짐 앱으로 출석을 체크하면 내 헬스장과 캐릭터가 함께 성장합니다. 출석이 쌓일수록 1번 출석으로 받는 헬스·PT 혜택이 커지고, 재등록 할인율도 올라갑니다.</p>
-          <p class="as-note">자세한 출석 보상 시스템은 상담 때 앱 화면을 직접 보여드리며 설명해 드립니다.</p>
-          <a class="btn" href="tel:0269537017">상담 문의</a>
+      <a class="att-app" href="#app"><span>출석은 <b style="color:inherit">플랜짐 앱</b>으로 체크하고 모읍니다</span><b>플랜짐 앱 보기 →</b></a>
+    </div>
+    </div>
+
+    <div class="part" id="app">
+      <div class="st">
+        <p class="en">PLANGYM APP · 플랜짐 앱</p>
+        <h3>출석이 게임이 되는 헬스장 앱</h3>
+        <p>운동하러 나올 이유를 하나 더. 플랜짐 회원은 앱으로 출석을 체크하고, 쌓인 출석으로 혜택을 키웁니다.</p>
+      </div>
+      <div class="tabs apx-tabs" role="tablist" aria-label="플랜짐 앱 기능" id="apptabs">
+        <button role="tab" aria-selected="true">출석 체크</button>
+        <button role="tab" aria-selected="false">성장</button>
+        <button role="tab" aria-selected="false">주간 보상</button>
+        <button role="tab" aria-selected="false">PT 기록</button>
+      </div>
+      <div class="apx">
+        <div class="apx-p" role="tabpanel">
+          <div class="apx-t"><p class="apx-k">01 · CHECK</p><h4>입실 QR 한 번이면<br>출석 끝</h4><p>입실할 때 QR을 찍고, 나갈 때 퇴실 Check. 출석할 때마다 티켓이 쌓이고, 내 출석 달력이 초록색으로 채워집니다.</p>
+            <ul><li>입실 QR · 퇴실 Check</li><li>1회 출석마다 티켓 적립</li><li>월간 출석 순위에 따라 티켓 버프</li></ul></div>
+          <div class="apx-phs"><figure class="apx-ph"><img src="img/app-home.webp" alt="플랜짐 앱 홈 화면: 출석 Check, ROOM 점수, 티켓, 재등록 할인, 출석 순위" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-cal.webp" alt="플랜짐 앱 출석 달력" loading="lazy"></figure></div>
         </div>
-        <div class="as-phones">
-          <figure class="phone p1"><img src="img/p02.webp" alt="플랜짐 앱 홈 화면: ROOM 점수, 캐릭터, 티켓, 재등록 할인율, 출석 보상과 내 헬스장" width="480" height="784" loading="lazy"></figure>
-          <figure class="phone p2"><img src="img/p03.webp" alt="플랜짐 앱 ROOM 도감: 출석 점수로 해금되는 방과 방별 재등록 할인 혜택" width="480" height="772" loading="lazy"></figure>
+        <div class="apx-p" role="tabpanel" hidden>
+          <div class="apx-t"><p class="apx-k">02 · GROW</p><h4>출석할수록<br>내 방과 캐릭터가 성장</h4><p>출석 점수가 쌓이면 내 방(ROOM)이 업그레이드되고, 방이 올라갈수록 재등록 할인율이 커집니다. 캐릭터와 장비 아이템으로 POWER도 키워 보세요.</p>
+            <ul><li>ROOM 단계마다 재등록 할인 UP</li><li>캐릭터 6단계 해금</li><li>운동 장비 아이템 수집</li></ul></div>
+          <div class="apx-phs"><figure class="apx-ph"><img src="img/app-char-m.webp" alt="플랜짐 앱 캐릭터 화면: 해금한 캐릭터와 다음 단계" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-char-f.webp" alt="플랜짐 앱 캐릭터 화면: 여성 캐릭터 6단계" loading="lazy"></figure></div>
+        </div>
+        <div class="apx-p" role="tabpanel" hidden>
+          <div class="apx-t"><p class="apx-k">03 · REWARD</p><h4>이번 주 출석이<br>다음 주 보상 상자로</h4><p>출석이 많을수록 상자 개수가, POWER가 높을수록 상자 등급이 올라갑니다. 퇴실까지 체크하면 퇴근가방도 함께 성장해요.</p>
+            <ul><li>주 1 · 3 · 5회 출석하면 상자 1 · 2 · 3개</li><li>POWER로 상자 등급 UP</li><li>누적 출석으로 퇴근가방 성급 UP</li></ul></div>
+          <div class="apx-phs"><figure class="apx-ph"><img src="img/app-week.webp" alt="플랜짐 앱 이번 주 보상: 상자 등급과 받을 상자 수" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-bag.webp" alt="플랜짐 앱 퇴실 Check: 퇴근가방 성장 현황" loading="lazy"></figure></div>
+        </div>
+        <div class="apx-p" role="tabpanel" hidden>
+          <div class="apx-t"><p class="apx-k">04 · PT</p><h4>내 PT가<br>앱에 기록됩니다</h4><p>남은 PT 횟수와 3대 운동 1RM 기록을 한눈에 봅니다. 수업이 끝나면 트레이너가 그날의 자세 피드백을 남겨 두어, 혼자 운동할 때도 다시 볼 수 있어요.</p>
+            <ul><li>PT 잔여 횟수 확인</li><li>벤치 · 데드 · 스쿼트 1RM 기록</li><li>수업마다 트레이너 피드백 노트</li></ul></div>
+          <div class="apx-phs"><figure class="apx-ph"><img src="img/app-pt.webp" alt="플랜짐 앱 PT 화면: 잔여 횟수와 1RM 기록" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-note.webp" alt="플랜짐 앱 PT 수업 피드백 노트" loading="lazy"></figure></div>
         </div>
       </div>
-    </div>
+      <div class="apx-foot"><p>앱은 등록할 때 트레이너가 설치부터 사용법까지 직접 안내해 드립니다.</p><a class="wk-btn" href="http://pf.kakao.com/_lMxgLxj/chat" target="_blank" rel="noopener">앱 · 출석혜택 상담하기</a></div>
     </div>
 
     <div class="part" id="trainers">
@@ -1698,6 +1743,7 @@ document.querySelectorAll('.att-clone').forEach(box=>{const src=document.getElem
   <a class="qw-i" href="https://www.instagram.com/plangym_armsa/" target="_blank" rel="noopener" title="인스타그램"><span class="ic insta"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="10" width="20" height="20" rx="6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="20" cy="20" r="4.6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="25.6" cy="14.4" r="1.5" fill="#fff"/></svg></span><span class="t">인스타그램</span></a>
   <a class="qw-i" href="https://www.youtube.com/@saengjonmuscle" target="_blank" rel="noopener" title="유튜브"><span class="ic yt2"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="12" width="24" height="16" rx="5" fill="#fff"/><path d="M18 16.5v7l6-3.5z" fill="#ff0033"/></svg></span><span class="t">유튜브</span></a>
 </aside>
+<script>(function(){var b=document.getElementById("apptabs");if(!b)return;var bs=[].slice.call(b.querySelectorAll("[role=tab]")),ps=[].slice.call(document.querySelectorAll("#app .apx-p"));function sel(i){bs.forEach(function(x,j){x.setAttribute("aria-selected",j===i);x.tabIndex=j===i?0:-1});ps.forEach(function(p,j){p.hidden=j!==i;if(j===i)p.querySelectorAll("img").forEach(function(im){im.loading="eager"})})}b.addEventListener("click",function(e){var t=e.target.closest("[role=tab]");if(t)sel(bs.indexOf(t))});b.addEventListener("keydown",function(e){var c=bs.findIndex(function(x){return x.getAttribute("aria-selected")==="true"}),n=null;if(e.key==="ArrowRight")n=(c+1)%bs.length;if(e.key==="ArrowLeft")n=(c-1+bs.length)%bs.length;if(n!==null){e.preventDefault();sel(n);bs[n].focus()}});})();</script>
 <script>
 /* 펼친 챕터의 사진은 바로 불러오기 (일부 모바일 브라우저에서 숨김 영역의 지연 로딩이 멈추는 문제 방지) */
 (function(){
