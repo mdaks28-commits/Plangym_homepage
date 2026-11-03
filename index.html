@@ -823,6 +823,11 @@ footer .logo{font-size:22px;color:var(--ink)}
 .tkb-go:hover{opacity:.9}
 @media (max-width:860px){.tkb{grid-template-columns:1fr;gap:28px;padding:30px 20px}.tkb h4{font-size:24px}.tkb-shot{transform:none}.tkb-go{width:100%;justify-content:center}}
 
+.tkb-shots{position:relative;width:100%;padding-right:116px}
+.tkb-item{position:absolute;right:0;top:50%;transform:translateY(-38%) rotate(3deg);width:130px;margin:0;border-radius:16px;overflow:hidden;border:4px solid #fff;box-shadow:0 20px 36px -16px rgba(0,0,0,.55);background:#fff}
+.tkb-item img{display:block;width:100%;height:auto}
+@media (max-width:860px){.tkb-shots{padding-right:88px}.tkb-item{width:100px}}
+
 .appshow{margin-top:48px;background:#1b1640;color:#f1effa;display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding:56px 56px 0;overflow:hidden;border-radius:4px}
 .as-txt{padding-bottom:56px}
 .as-txt .en{font-family:var(--serif);font-size:13px;letter-spacing:.24em;color:#b8acff;font-weight:600}
@@ -1037,15 +1042,15 @@ footer .logo{font-size:22px;color:var(--ink)}
       <div class="tkb">
         <div class="tkb-l">
           <p class="tkb-k">HOW IT WORKS · 출석이 혜택으로 바뀌는 방법</p>
-          <h4>출석하면 <em>티켓</em>,<br>티켓은 <em>헬스 기간</em>과 <em>PT</em>로</h4>
+          <h4>출석하면 <em>티켓</em>, 키울수록 <em>더 많이</em>,<br>티켓은 <em>헬스 기간</em>과 <em>PT</em>로</h4>
           <ol class="tkb-steps">
-            <li><span class="tkb-n">1</span><div><b>출석 1회 = 티켓</b><p>등록 시 <strong>5장</strong> → 100회 출석 후 <strong>10장</strong> → 200회 출석 후 <strong>15장</strong></p></div></li>
-            <li><span class="tkb-n">2</span><div><b>앱에 자동 적립</b><p>입실 QR만 찍으면 플랜짐 앱에 티켓이 쌓여요.</p></div></li>
+            <li><span class="tkb-n">1</span><div><b>출석 1회 = 티켓</b><p>입실 QR만 찍으면 앱에 자동 적립. 등록 시 <strong>5장</strong> → 100회 출석 후 <strong>10장</strong> → 200회 출석 후 <strong>15장</strong></p></div></li>
+            <li><span class="tkb-n">2</span><div><b>아이템 · 캐릭터로 티켓 UP</b><p>출석하며 운동 장비 아이템을 모으고 캐릭터를 업그레이드하면, 1회 출석당 받는 티켓이 더 늘어나요. 예) 고급 러닝머신 장착 시 출석 티켓 <strong>+0.6장</strong> · 증가율 <strong>+3.9%</strong></p></div></li>
             <li><span class="tkb-n">3</span><div><b>원할 때 교환</b><p><strong>200장</strong> = 헬스 10일 · <strong>300장</strong> = PT 1회</p></div></li>
           </ol>
         </div>
         <div class="tkb-r">
-          <figure class="tkb-shot"><img src="img/app-ticket.webp" alt="플랜짐 앱 홈 화면의 티켓 보유량, 재등록 할인, 1회 출석당 티켓" loading="lazy"><figcaption>실제 플랜짐 앱 화면</figcaption></figure>
+          <div class="tkb-shots"><figure class="tkb-shot"><img src="img/app-ticket.webp" alt="플랜짐 앱 홈 화면의 티켓 보유량, 재등록 할인, 1회 출석당 티켓" loading="lazy"><figcaption>실제 플랜짐 앱 화면</figcaption></figure><figure class="tkb-item"><img src="img/app-item.webp" alt="플랜짐 앱 아이템: 고급 러닝머신, 출석 티켓 +0.6장, 출석 티켓 증가율 +3.9%" loading="lazy"></figure></div>
           <a class="tkb-go" href="#app">플랜짐 앱 자세히 보기 <span aria-hidden="true">↓</span></a>
         </div>
       </div>
