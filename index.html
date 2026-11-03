@@ -1698,5 +1698,15 @@ document.querySelectorAll('.att-clone').forEach(box=>{const src=document.getElem
   <a class="qw-i" href="https://www.instagram.com/plangym_armsa/" target="_blank" rel="noopener" title="인스타그램"><span class="ic insta"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="10" width="20" height="20" rx="6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="20" cy="20" r="4.6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="25.6" cy="14.4" r="1.5" fill="#fff"/></svg></span><span class="t">인스타그램</span></a>
   <a class="qw-i" href="https://www.youtube.com/@saengjonmuscle" target="_blank" rel="noopener" title="유튜브"><span class="ic yt2"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="12" width="24" height="16" rx="5" fill="#fff"/><path d="M18 16.5v7l6-3.5z" fill="#ff0033"/></svg></span><span class="t">유튜브</span></a>
 </aside>
+<script>
+/* 펼친 챕터의 사진은 바로 불러오기 (일부 모바일 브라우저에서 숨김 영역의 지연 로딩이 멈추는 문제 방지) */
+(function(){
+  function wake(root){root.querySelectorAll('img[loading="lazy"]').forEach(function(i){i.loading='eager';if(!i.complete){var s=i.getAttribute('src');i.src='';i.src=s;}});}
+  function check(){document.querySelectorAll('section.chapter').forEach(function(c){if(!c.hidden&&!c.dataset.woke){c.dataset.woke='1';setTimeout(function(){wake(c)},50);}});}
+  try{new MutationObserver(check).observe(document.body,{attributes:true,subtree:true,attributeFilter:['hidden'],childList:true});}catch(e){}
+  window.addEventListener('load',function(){check();setTimeout(function(){wake(document)},2500);});
+  check();
+})();
+</script>
 </body>
 </html>
