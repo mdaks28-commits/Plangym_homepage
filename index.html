@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>플랜짐 암사점 | 나올수록 남는 헬스장</title>
+<title>플랜짐 암사점 | 출석으로 몸 만들고 돈도 버는 헬스장</title>
 <meta name="description" content="강동구 암사동 헬스·PT 플랜짐. 헬스 회원 50명 인원제한, 출석할수록 헬스 기간과 PT 횟수가 늘어나는 출석보상, 진단부터 시작하는 1:1 PT.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="플랜짐 PLANGYM">
-<meta property="og:title" content="플랜짐 암사점 | 나올수록 남는 헬스장">
+<meta property="og:title" content="플랜짐 암사점 | 출석으로 몸 만들고 돈도 버는 헬스장">
 <meta property="og:description" content="헬스 회원 50명 인원제한 · 출석할수록 헬스 기간 UP, PT 횟수 UP · 1회 체험 PT 20,000원">
 <meta property="og:url" content="https://plangym.kr/">
 <meta property="og:image" content="https://plangym.kr/og.jpg">
@@ -828,6 +828,160 @@ footer .logo{font-size:22px;color:var(--ink)}
 .tkb-item img{display:block;width:100%;height:auto}
 @media (max-width:860px){.tkb-shots{padding-right:88px}.tkb-item{width:100px}}
 
+/* 홈 위치 줄 */
+.hero .hloc{margin:14px 0 0;font-size:clamp(15px,1.4vw,18px);font-weight:600;color:rgba(255,255,255,.85);letter-spacing:-.01em}
+/* 그래서 나는 며칠 */
+.hm2{background:var(--soft);border-radius:24px;padding:40px}
+.hm2-k{display:inline-block;margin:0;font-size:13px;font-weight:800;color:var(--brand);background:var(--brand-soft);padding:6px 13px;border-radius:999px}
+.hm2 h4{margin:14px 0 0;font-size:clamp(23px,2.6vw,32px);font-weight:800;letter-spacing:-.035em;line-height:1.3}
+.hm2 h4 em{font-style:normal;color:var(--brand)}
+.hm2-d{margin:10px 0 0;color:var(--sub);font-size:15px;line-height:1.7}
+.hm2-d b{color:var(--ink)}
+.lvl{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:end}
+.lvl li{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;position:relative;min-width:0}
+.lvl li:nth-child(2){padding-top:46px}
+.lvl li.top{padding-top:70px;background:var(--brand);border-color:var(--brand);color:#fff}
+.lvl li+li::before{content:"";position:absolute;left:-12px;top:50%;width:10px;height:10px;border-top:2px solid var(--muted);border-right:2px solid var(--muted);transform:translate(-2px,-50%) rotate(45deg)}
+.lv-t{margin:0;font-size:14px;font-weight:700;color:var(--sub);display:flex;align-items:center;gap:8px}
+.lv-t span{font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--brand);background:var(--brand-soft);padding:3px 8px;border-radius:6px}
+.lv-tix{display:flex;flex-wrap:wrap;gap:4px;margin:16px 0 0;max-width:150px}
+.lv-tix i{width:20px;height:13px;border-radius:3px;background:#e2b45c;position:relative}
+.lv-tix i::after{content:"";position:absolute;left:6px;top:2px;bottom:2px;border-left:1.5px dashed rgba(255,255,255,.75)}
+.lv-big{margin:12px 0 0;font-size:15px;font-weight:600}
+.lv-big b{font-family:var(--serif);font-size:34px;font-weight:700;color:var(--brand);margin:0 2px;font-variant-numeric:lining-nums;line-height:1}
+.lv-get{margin:16px 0 0;padding-top:14px;border-top:1px dashed var(--line)}
+.lv-get p{margin:0;font-size:13px;color:var(--sub)}
+.lv-bar{display:block;height:8px;border-radius:99px;background:var(--soft);margin:8px 0 6px;overflow:hidden}
+.lv-bar i{display:block;height:100%;border-radius:99px;background:color-mix(in srgb,var(--brand) 45%,var(--bg))}
+.lv-n{display:flex;align-items:baseline;gap:4px;flex-wrap:wrap}
+.lvl .lv-n{font-size:15px;color:var(--ink);font-weight:700}
+.lv-n b{font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
+.lv-n small{margin-left:auto;font-size:12.5px;font-weight:500;color:var(--muted)}
+.lvl li.top .lv-t,.lvl li.top .lv-get p,.lvl li.top .lv-n small{color:rgba(255,255,255,.75)}
+.lvl li.top .lv-t span{background:#e9c98a;color:#1d2a24}
+.lvl li.top .lv-big b{color:#e9c98a}
+.lvl li.top .lv-n{color:#fff}
+.lvl li.top .lv-get{border-color:rgba(255,255,255,.25)}
+.lvl li.top .lv-bar{background:rgba(255,255,255,.18)}
+.lvl li.top .lv-bar i{background:#e9c98a}
+.acalc{margin-top:16px;background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:26px 28px}
+.calc-h{margin:0;font-weight:800;font-size:17px}
+.calc-qs{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:14px}
+.calc-q{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.calc-q>span{font-size:14px;color:var(--sub);font-weight:600}
+.cseg{display:inline-flex;background:var(--soft);border-radius:999px;padding:3px}
+.cseg button{border:0;background:none;font:inherit;font-size:14px;font-weight:700;color:var(--sub);padding:7px 14px;border-radius:999px;cursor:pointer}
+.cseg button.on{background:var(--brand);color:var(--brand-ink)}
+.calc-r{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:6px 20px;margin-top:22px}
+.calc-f{margin:0;font-size:15px;color:var(--sub)}
+.calc-f b{color:var(--ink);font-variant-numeric:tabular-nums}
+.calc-big{margin:0;font-size:18px;font-weight:700}
+.calc-big b{font-family:var(--serif);font-size:46px;color:var(--brand);font-variant-numeric:lining-nums;line-height:1;margin-left:4px}
+.calc-or{font-size:14px;font-weight:500;color:var(--muted);margin:0 10px}
+.trk{position:relative;height:22px;margin-top:18px}
+.trk .rls{position:absolute;left:0;right:0;top:6px;height:10px;border-radius:99px;overflow:hidden;background:var(--soft)}
+.trk .rl{position:absolute;top:0;height:100%}
+.trk .rl.a{background:color-mix(in srgb,var(--brand) 22%,var(--bg))}
+.trk .rl.b{background:color-mix(in srgb,var(--brand) 45%,var(--bg))}
+.trk .rl.c{background:var(--brand)}
+.trk .mk{position:absolute;top:4px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:#e2b45c;border:2px solid var(--bg)}
+.trk .tl{position:absolute;top:24px;transform:translateX(-50%);font-size:11.5px;color:var(--muted);white-space:nowrap}
+.trk-lg{margin:26px 0 0;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--sub)}
+.trk-lg .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#e2b45c;margin-right:6px;vertical-align:-1px}
+.calc-n{margin:14px 0 0;font-size:14.5px;font-weight:600;color:var(--ink)}
+.calc-n b{color:var(--brand)}
+.calc-x{margin:4px 0 0;font-size:12.5px;color:var(--muted)}
+/* 나만의 할인율 */
+.dgr{margin-top:64px}
+.dgr-k{margin:0;font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--brand)}
+.dgr-head h4{margin:10px 0 0;font-size:clamp(23px,2.6vw,32px);font-weight:800;letter-spacing:-.035em;line-height:1.35}
+.dgr-head h4 em{font-style:normal;color:var(--brand)}
+.dgr-head>p:last-child{margin:10px 0 0;color:var(--sub);font-size:15px;line-height:1.7;max-width:640px}
+.rooms{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.rooms li{background:var(--bg);border:1px solid var(--line);border-radius:18px;overflow:hidden;min-width:0;position:relative}
+.rooms li+li::before{content:"";position:absolute;left:10px;top:12px;width:24px;height:24px;border-radius:50%;background:rgba(0,0,0,.45);z-index:1;display:none}
+.rooms img{display:block;width:100%;aspect-ratio:374/205;object-fit:cover}
+.rm-b{padding:14px 18px 18px}
+.rm-st{margin:0;color:#e0a020;font-size:13px;letter-spacing:1px}
+.rm-st span{color:var(--line)}
+.rm-n{margin:2px 0 0;font-weight:800;font-size:17px}
+.rm-s{margin:2px 0 0;font-size:13px;color:var(--muted)}
+.rm-pc{margin:12px 0 0;display:flex;align-items:baseline;gap:4px;font-weight:700}
+.rm-pc span{font-size:13px;color:var(--sub);margin-right:4px}
+.rm-pc b{font-family:var(--serif);font-size:34px;color:var(--brand);line-height:1;font-variant-numeric:lining-nums}
+.rm-bar{display:block;height:6px;border-radius:99px;background:var(--soft);margin-top:8px;overflow:hidden}
+.rm-bar i{display:block;height:100%;background:var(--brand);border-radius:99px}
+.rm-pt{margin:8px 0 0;font-size:13px;color:var(--sub)}
+.rooms li.lock .rm-pc b{color:var(--muted)}
+.rooms li.lock .rm-bar i{background:var(--muted)}
+.rooms-n{margin:12px 0 0;font-size:13px;color:var(--muted)}
+.cmp{margin-top:28px;background:#211c4a;color:#fff;border-radius:24px;padding:34px}
+.cmp-h{margin:0;font-size:20px;font-weight:800;letter-spacing:-.02em;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.cmp-h span{font-size:13px;font-weight:600;color:rgba(255,255,255,.6)}
+.cmp-g{margin-top:22px;display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;max-width:760px}
+.cmp-g figure{margin:0;min-width:0}
+.cmp-g img{display:block;width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.cmp-g figcaption{margin-top:12px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.cmp-g figcaption span{width:100%;font-size:13px;color:rgba(255,255,255,.65)}
+.cmp-g figcaption b{font-family:var(--serif);font-size:30px;color:#fff;font-variant-numeric:lining-nums}
+.cmp-g figure.up figcaption b{color:#ffe14d}
+.cmp-g figcaption small{font-size:14px;color:rgba(255,255,255,.7)}
+.cmp-ar{margin:0;display:flex;flex-direction:column;align-items:center;gap:2px}
+.cmp-ar b{font-size:14px;background:#ffe14d;color:#211c4a;padding:4px 10px;border-radius:999px}
+.cmp-ar span{font-size:30px;color:#ffe14d;line-height:1}
+.cmp-how{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cmp-how li{background:rgba(255,255,255,.07);border-radius:14px;padding:16px 18px;font-size:14px;line-height:1.6;color:rgba(255,255,255,.8)}
+.cmp-how b{display:block;font-size:15px;color:#ffe14d;margin-bottom:4px}
+.cmp-won{margin:18px 0 0;font-size:15px;color:rgba(255,255,255,.85)}
+.cmp-won b{color:#fff}
+/* 가격 요약 · 왜 이 가격 */
+.psum{margin-top:22px;display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 18px;border-radius:14px;background:var(--brand-soft);color:var(--ink);font-size:15px}
+.psum b{color:var(--brand);font-weight:800}
+.psum i{font-style:normal;font-weight:700;font-size:14px;color:var(--brand)}
+.mt-more{margin-top:56px;border-top:1px solid var(--line)}
+.mt-more>summary{list-style:none;cursor:pointer;padding:20px 0;font-weight:700;font-size:17px;display:flex;justify-content:space-between;align-items:center}
+.mt-more>summary::-webkit-details-marker{display:none}
+.mt-more>summary::after{content:"+";font-size:24px;font-weight:400;color:var(--brand)}
+.mt-more[open]>summary::after{content:"−"}
+.why{margin-bottom:32px;background:var(--soft);border-radius:18px;padding:22px 24px}
+.why-h{margin:0;font-weight:800;font-size:16px}
+.why ul{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.why li{background:var(--bg);border-radius:12px;padding:14px 16px;font-size:13.5px;color:var(--sub);line-height:1.55}
+.why li b{display:block;font-size:15.5px;color:var(--brand);margin-bottom:2px}
+/* 리뷰 · 유튜브 · 바닥글 */
+.bax-sub{margin:8px 0 0;text-align:center;font-size:16px;color:var(--sub)}
+.bax-sub b{color:var(--brand)}
+.bx-head .nl{display:inline-block;margin-left:8px;font-style:normal;font-size:12px;font-weight:700;color:var(--brand);background:var(--brand-soft);padding:3px 8px;border-radius:999px;vertical-align:3px}
+.yt-own{display:block;color:var(--brand);font-weight:700;margin-bottom:4px}
+.ft-sns{display:flex;gap:10px;flex-wrap:wrap}
+.ft-sns-i{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 6px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink);font-size:13.5px;font-weight:600}
+.ft-sns-i .ic{width:28px;height:28px;border-radius:50%;display:grid;place-items:center}
+.ft-sns-i .ic svg{width:22px;height:22px}
+.wk-foot p a[href^="tel"]{border:0;font-weight:700}
+@media (max-width:760px){
+  .hm2{padding:26px 18px;border-radius:20px}
+  .lvl{grid-template-columns:1fr;gap:10px}
+  .lvl li,.lvl li:nth-child(2),.lvl li.top{padding:18px}
+  .lvl li+li::before{display:none}
+  .lv-tix{max-width:none}
+  .acalc{padding:20px 16px}
+  .calc-qs{gap:12px}
+  .cseg button{padding:7px 11px;font-size:13.5px}
+  .calc-big b{font-size:40px}
+  .rooms{grid-template-columns:1fr 1fr;gap:10px}
+  .rm-b{padding:12px 12px 14px}
+  .rm-pc b{font-size:28px}
+  .cmp{padding:24px 16px;border-radius:20px}
+  .cmp-g{grid-template-columns:1fr 1fr;gap:10px;position:relative;align-items:start}
+  .cmp-ar{top:110px !important}
+  .cmp-ar{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);z-index:1}
+  .cmp-ar span{display:none}
+  .cmp-g figcaption b{font-size:24px}
+  .cmp-how{grid-template-columns:1fr}
+  .why ul{grid-template-columns:1fr}
+  .psum{font-size:14px;padding:11px 14px;gap:8px}
+}
+
 .appshow{margin-top:48px;background:#1b1640;color:#f1effa;display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding:56px 56px 0;overflow:hidden;border-radius:4px}
 .as-txt{padding-bottom:56px}
 .as-txt .en{font-family:var(--serif);font-size:13px;letter-spacing:.24em;color:#b8acff;font-weight:600}
@@ -995,7 +1149,8 @@ footer .logo{font-size:22px;color:var(--ink)}
   <div class="wrap">
     <div class="hcopy">
       <a class="evpill" href="#pt-weekend"><b>EVENT</b><span>주말 오전 PT 초급 8회 30만원부터 · 11/30 마감</span><i>→</i></a>
-      <h1>나올수록<br><em>남는</em> 헬스장</h1>
+      <h1>출석으로<br>몸 만들고,<br><em>돈도 벌고</em></h1>
+      <p class="hloc">강동구 암사동 · 회원 50명 한정 헬스 · PT</p>
       <p class="lead plus"><span class="pc">헬스 기간<b>+</b></span><span class="pc">PT<b>+</b></span><span class="pc">체력<b>+</b></span><span class="pc">몸매<b>+</b></span></p>
       <nav class="hmenu" aria-label="플랜짐 둘러보기">
         <p class="hm-t">플랜짐 둘러보기 <span>눌러서 바로 이동</span></p>
@@ -1008,7 +1163,7 @@ footer .logo{font-size:22px;color:var(--ink)}
     </div>
     <div class="pillars">
       <div class="pillar"><p class="pn">01 · LIMIT</p><p class="big" aria-hidden="true">50<small>명</small></p><h2>인원제한</h2><p class="d">헬스 회원은 50명까지만. 기구를 기다리지 않고, 트레이너가 한 명 한 명을 기억합니다.</p></div>
-      <a class="pillar hot" href="#attendance"><p class="pn">02 · REWARD</p><p class="big" aria-hidden="true">+10<small>일</small></p><h2>미친 출석보상</h2><p class="d">출석만 해도 헬스 10일이 추가됩니다. 처음엔 40회마다, 꾸준히 나오면 14회마다. PT도 같은 방식으로 늘어나요. <span class="go">출석혜택 보기 →</span></p></a>
+      <a class="pillar hot" href="#attendance"><p class="pn">02 · REWARD</p><p class="big" aria-hidden="true">+50<small>일</small></p><h2>미친 출석보상</h2><p class="d">주 3회, 1년 꾸준히 나오면 헬스 기간이 약 50일 늘어납니다. 오래 다닐수록 같은 출석에 더 많이 쌓여요. <span class="go">내 출석으로 계산해 보기 →</span></p></a>
       <div class="pillar"><p class="pn">03 · PLAN</p><p class="big" aria-hidden="true">1<small>장</small></p><h2>나만의 운동 처방전</h2><p class="d">병원에서 모두에게 같은 약을 주지 않듯, 플랜짐은 모두에게 같은 운동을 시키지 않습니다. 진단하고, 처방하고, 함께 실행합니다. 회원이 100명이면 처방전도 100장.</p></div>
     </div>
     <span class="scrollhint" aria-hidden="true">SCROLL</span>
@@ -1034,9 +1189,30 @@ footer .logo{font-size:22px;color:var(--ink)}
     <div id="att-overview">
       <figure class="tix">
         
-        <div class="gain">
-          <div class="gcard"><div class="ghead"><h4>헬스 +10일</h4><span class="x3">출석 가치 3배</span></div><p class="gsub">받기까지 필요한 출석 횟수</p><div class="grow"><span class="lb">등록 시</span><span class="tr"><span class="fill" style="width:72.0%"></span><span class="n">40회</span></span></div><div class="grow"><span class="lb">100회 출석 후</span><span class="tr"><span class="fill" style="width:36.0%"></span><span class="n">20회</span></span></div><div class="grow top"><span class="lb">200회 출석 후</span><span class="tr"><span class="fill" style="width:25.2%"></span><span class="n">14회</span></span></div></div>
-          <div class="gcard"><div class="ghead"><h4>PT +1회</h4><span class="x3">출석 가치 3배</span></div><p class="gsub">받기까지 필요한 출석 횟수</p><div class="grow"><span class="lb">등록 시</span><span class="tr"><span class="fill" style="width:72.0%"></span><span class="n">60회</span></span></div><div class="grow"><span class="lb">100회 출석 후</span><span class="tr"><span class="fill" style="width:36.0%"></span><span class="n">30회</span></span></div><div class="grow top"><span class="lb">200회 출석 후</span><span class="tr"><span class="fill" style="width:24.0%"></span><span class="n">20회</span></span></div></div>
+        <div class="hm2">
+          <p class="hm2-k">그래서 나는 며칠 받나요?</p>
+          <h4>오래 다닐수록, 같은 출석에<br class="mbr"> <em>티켓이 최대 3배</em></h4>
+          <p class="hm2-d">처음엔 출석 1번에 티켓 5장. 꾸준히 나오면 내 계정이 자라서 10장, 15장으로 늘어납니다.<br class="pbr">티켓 <b>200장</b>이 모이면 <b>헬스 10일</b>, <b>300장</b>이면 <b>PT 1회</b>로 바꿉니다.</p>
+          <ol class="lvl">
+            <li><p class="lv-t"><span>LV.1</span>처음 등록하면</p><span class="lv-tix" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><p class="lv-big">출석 1번 = 티켓 <b>5</b>장</p><div class="lv-get"><p>헬스 +10일까지 출석</p><span class="lv-bar"><i style="width:100%"></i></span><p class="lv-n"><b>40</b>번<small>PT 1회는 60번</small></p></div></li>
+            <li><p class="lv-t"><span>LV.2</span>100번 출석하면</p><span class="lv-tix" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><p class="lv-big">출석 1번 = 티켓 <b>10</b>장</p><div class="lv-get"><p>헬스 +10일까지 출석</p><span class="lv-bar"><i style="width:50%"></i></span><p class="lv-n"><b>20</b>번<small>PT 1회는 30번</small></p></div></li>
+            <li class="top"><p class="lv-t"><span>LV.3</span>200번 출석하면</p><span class="lv-tix" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><p class="lv-big">출석 1번 = 티켓 <b>15</b>장</p><div class="lv-get"><p>헬스 +10일까지 출석</p><span class="lv-bar"><i style="width:35%"></i></span><p class="lv-n"><b>14</b>번<small>PT 1회는 20번</small></p></div></li>
+          </ol>
+          <div class="acalc" data-calc>
+            <p class="calc-h">내 출석으로 계산해 보기</p>
+            <div class="calc-qs">
+              <div class="calc-q"><span>일주일에</span><div class="cseg" data-k="f"><button type="button" data-v="2">2번</button><button type="button" data-v="3" class="on">3번</button><button type="button" data-v="4">4번</button><button type="button" data-v="5">5번</button></div></div>
+              <div class="calc-q"><span>다닌 기간</span><div class="cseg" data-k="w"><button type="button" data-v="26">6개월</button><button type="button" data-v="52" class="on">1년</button><button type="button" data-v="104">2년</button></div></div>
+            </div>
+            <div class="calc-r">
+              <p class="calc-f">출석 <b data-o="v">156</b>번 → 티켓 <b data-o="t">1,060</b>장</p>
+              <p class="calc-big">헬스 <b data-o="d">+50</b>일<span class="calc-or">또는</span>PT <b data-o="p">+3</b>회</p>
+            </div>
+            <div class="trk" data-o="trk" aria-hidden="true"></div>
+            <p class="trk-lg"><span><i class="dot"></i>헬스 +10일 받는 순간</span><span>뒤로 갈수록 점이 촘촘해져요</span></p>
+            <p class="calc-n" data-o="w">헬스 1년권(650,000원) 하루 가격으로 치면 약 8.9만원어치예요.</p>
+            <p class="calc-x">아이템 · 캐릭터 효과는 빼고 계산했어요. 아이템을 모으면 더 빨라집니다.</p>
+          </div>
         </div>
       </figure>
       <div class="tkb">
@@ -1055,6 +1231,34 @@ footer .logo{font-size:22px;color:var(--ink)}
         </div>
       </div>
     </div>
+    <div class="dgr">
+      <div class="dgr-head">
+        <p class="dgr-k">MY DISCOUNT · 나만의 재등록 할인율</p>
+        <h4>재등록 할인율은 정해져 있지 않아요.<br><em>출석으로 내가 키웁니다.</em></h4>
+        <p>출석하면 앱 속 내 헬스장(ROOM)에 점수가 쌓이고, 방이 한 단계 커질 때마다 다음 재등록 할인이 올라갑니다.</p>
+      </div>
+      <ol class="rooms">
+          <li><img src="img/app-room1.webp" alt="플랜짐 앱 시작의 방 화면" loading="lazy"><div class="rm-b"><p class="rm-st" aria-label="별 1개">★<span>★★★★</span></p><p class="rm-n">시작의 방</p><p class="rm-s">처음부터</p><p class="rm-pc"><span>헬스</span><b>4</b>%</p><span class="rm-bar"><i style="width:50%"></i></span><p class="rm-pt">PT 재등록 할인 2%</p></div></li>
+          <li><img src="img/app-room2.webp" alt="플랜짐 앱 성장의 방 화면" loading="lazy"><div class="rm-b"><p class="rm-st" aria-label="별 2개">★★<span>★★★</span></p><p class="rm-n">성장의 방</p><p class="rm-s">ROOM 180점</p><p class="rm-pc"><span>헬스</span><b>6</b>%</p><span class="rm-bar"><i style="width:75%"></i></span><p class="rm-pt">PT 재등록 할인 3%</p></div></li>
+          <li><img src="img/app-room3.webp" alt="플랜짐 앱 단련의 방 화면" loading="lazy"><div class="rm-b"><p class="rm-st" aria-label="별 3개">★★★<span>★★</span></p><p class="rm-n">단련의 방</p><p class="rm-s">ROOM 365점</p><p class="rm-pc"><span>헬스</span><b>7</b>%</p><span class="rm-bar"><i style="width:88%"></i></span><p class="rm-pt">PT 재등록 할인 3.5%</p></div></li>
+          <li class="lock"><img src="img/app-room4.webp" alt="플랜짐 앱 숙련의 방 화면" loading="lazy"><div class="rm-b"><p class="rm-st" aria-label="별 4개">★★★★<span>★</span></p><p class="rm-n">숙련의 방</p><p class="rm-s">ROOM 730점</p><p class="rm-pc"><span>헬스</span><b>8</b>%</p><span class="rm-bar"><i style="width:100%"></i></span><p class="rm-pt">PT 재등록 할인 4%</p></div></li>
+      </ol>
+      <p class="rooms-n">실제 플랜짐 앱의 ROOM 도감 화면이에요. 아직 열지 않은 방은 어둡게 보입니다.</p>
+      <div class="cmp">
+        <p class="cmp-h">같은 앱, 다른 할인율 <span>실제 회원 두 명의 앱 화면</span></p>
+        <div class="cmp-g">
+          <figure><img src="img/app-lv1.webp" alt="플랜짐 앱 홈: ROOM 246점, 재등록 할인 PT 3% 헬스 6%" loading="lazy"><figcaption><span>ROOM 246점 · 성장의 방</span><b>헬스 6%</b><small>PT 3%</small></figcaption></figure>
+          <p class="cmp-ar" aria-hidden="true"><b>2배</b><span>→</span></p>
+          <figure class="up"><img src="img/app-lv2.webp" alt="플랜짐 앱 홈: ROOM 397점, 재등록 할인 PT 3.5% 헬스 12.1%" loading="lazy"><figcaption><span>ROOM 397점 · 단련의 방 + 아이템</span><b>헬스 12.1%</b><small>PT 3.5%</small></figcaption></figure>
+        </div>
+        <ul class="cmp-how">
+          <li><b>방</b><span>출석할수록 ROOM 점수가 쌓여 방이 커지고, 기본 할인율이 올라갑니다.</span></li>
+          <li><b>아이템</b><span>보상 상자에서 나온 운동 장비를 방에 설치하고 착용하면 보너스가 더해집니다.</span></li>
+          <li><b>캐릭터</b><span>캐릭터를 해금할수록 POWER가 올라 더 좋은 상자를 받습니다.</span></li>
+        </ul>
+        <p class="cmp-won">헬스 1년 재등록(550,000원)이라면 <b>6% → 33,000원</b> 할인이, <b>12.1% → 66,550원</b> 할인이 됩니다.</p>
+      </div>
+    </div>
     </div>
 
     <div class="part" id="app">
@@ -1064,29 +1268,29 @@ footer .logo{font-size:22px;color:var(--ink)}
         <p>운동하러 나올 이유를 하나 더. 플랜짐 회원은 앱으로 출석을 체크하고, 쌓인 출석으로 혜택을 키웁니다.</p>
       </div>
       <div class="tabs apx-tabs" role="tablist" aria-label="플랜짐 앱 기능" id="apptabs">
-        <button role="tab" aria-selected="true">출석 체크</button>
-        <button role="tab" aria-selected="false">성장</button>
-        <button role="tab" aria-selected="false">주간 보상</button>
+        <button role="tab" aria-selected="true">티켓 적립</button>
+        <button role="tab" aria-selected="false">할인율 UP</button>
+        <button role="tab" aria-selected="false">보상 상자</button>
         <button role="tab" aria-selected="false">PT 기록</button>
       </div>
       <div class="apx">
         <div class="apx-p" role="tabpanel">
-          <div class="apx-t"><p class="apx-k">01 · CHECK</p><h4>입실 QR 한 번이면<br>출석 끝</h4><p>입실할 때 QR을 찍고, 나갈 때 퇴실 Check. 출석할 때마다 티켓이 쌓이고, 내 출석 달력이 초록색으로 채워집니다.</p>
+          <div class="apx-t"><p class="apx-k">01 · CHECK</p><h4>QR 한 번 찍으면<br>티켓이 쌓입니다</h4><p>입실할 때 QR을 찍고, 나갈 때 퇴실 Check. 출석할 때마다 티켓이 쌓이고, 내 출석 달력이 초록색으로 채워집니다.</p>
             <ul><li>입실 QR · 퇴실 Check</li><li>1회 출석마다 티켓 적립</li><li>월간 출석 순위에 따라 티켓 버프</li></ul></div>
           <div class="apx-phs"><figure class="apx-ph"><img src="img/app-home.webp" alt="플랜짐 앱 홈 화면: 출석 Check, ROOM 점수, 티켓, 재등록 할인, 출석 순위" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-cal.webp" alt="플랜짐 앱 출석 달력" loading="lazy"></figure></div>
         </div>
         <div class="apx-p" role="tabpanel" hidden>
-          <div class="apx-t"><p class="apx-k">02 · GROW</p><h4>출석할수록<br>내 방과 캐릭터가 성장</h4><p>출석 점수가 쌓이면 내 방(ROOM)이 업그레이드되고, 방이 올라갈수록 재등록 할인율이 커집니다. 캐릭터와 장비 아이템으로 POWER도 키워 보세요.</p>
+          <div class="apx-t"><p class="apx-k">02 · GROW</p><h4>방이 클수록<br>재등록 할인이 커집니다</h4><p>출석 점수가 쌓이면 내 방(ROOM)이 업그레이드되고, 방이 올라갈수록 재등록 할인율이 커집니다. 캐릭터와 장비 아이템으로 POWER도 키워 보세요.</p>
             <ul><li>ROOM 단계마다 재등록 할인 UP</li><li>캐릭터 6단계 해금</li><li>운동 장비 아이템 수집</li></ul></div>
           <div class="apx-phs"><figure class="apx-ph"><img src="img/app-char-m.webp" alt="플랜짐 앱 캐릭터 화면: 해금한 캐릭터와 다음 단계" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-char-f.webp" alt="플랜짐 앱 캐릭터 화면: 여성 캐릭터 6단계" loading="lazy"></figure></div>
         </div>
         <div class="apx-p" role="tabpanel" hidden>
-          <div class="apx-t"><p class="apx-k">03 · REWARD</p><h4>이번 주 출석이<br>다음 주 보상 상자로</h4><p>출석이 많을수록 상자 개수가, POWER가 높을수록 상자 등급이 올라갑니다. 퇴실까지 체크하면 퇴근가방도 함께 성장해요.</p>
+          <div class="apx-t"><p class="apx-k">03 · REWARD</p><h4>꾸준히 나온 주에는<br>보상 상자가 옵니다</h4><p>출석이 많을수록 상자 개수가, POWER가 높을수록 상자 등급이 올라갑니다. 퇴실까지 체크하면 퇴근가방도 함께 성장해요.</p>
             <ul><li>주 1 · 3 · 5회 출석하면 상자 1 · 2 · 3개</li><li>POWER로 상자 등급 UP</li><li>누적 출석으로 퇴근가방 성급 UP</li></ul></div>
           <div class="apx-phs"><figure class="apx-ph"><img src="img/app-week.webp" alt="플랜짐 앱 이번 주 보상: 상자 등급과 받을 상자 수" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-bag.webp" alt="플랜짐 앱 퇴실 Check: 퇴근가방 성장 현황" loading="lazy"></figure></div>
         </div>
         <div class="apx-p" role="tabpanel" hidden>
-          <div class="apx-t"><p class="apx-k">04 · PT</p><h4>내 PT가<br>앱에 기록됩니다</h4><p>남은 PT 횟수와 3대 운동 1RM 기록을 한눈에 봅니다. 수업이 끝나면 트레이너가 그날의 자세 피드백을 남겨 두어, 혼자 운동할 때도 다시 볼 수 있어요.</p>
+          <div class="apx-t"><p class="apx-k">04 · PT</p><h4>수업이 끝나도<br>피드백이 남습니다</h4><p>남은 PT 횟수와 3대 운동 1RM 기록을 한눈에 봅니다. 수업이 끝나면 트레이너가 그날의 자세 피드백을 남겨 두어, 혼자 운동할 때도 다시 볼 수 있어요.</p>
             <ul><li>PT 잔여 횟수 확인</li><li>벤치 · 데드 · 스쿼트 1RM 기록</li><li>수업마다 트레이너 피드백 노트</li></ul></div>
           <div class="apx-phs"><figure class="apx-ph"><img src="img/app-pt.webp" alt="플랜짐 앱 PT 화면: 잔여 횟수와 1RM 기록" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-note.webp" alt="플랜짐 앱 PT 수업 피드백 노트" loading="lazy"></figure></div>
         </div>
@@ -1179,7 +1383,7 @@ footer .logo{font-size:22px;color:var(--ink)}
           <ul>
             <li><span>평일 · 토요일</span><span>직원 상주</span></li>
             <li><span>일요일</span><span>무인 운영</span></li>
-            <li><span>1회 체험 PT</span><span>오전 08:00 – 12:00</span></li>
+            <li><span>1회 체험 PT</span><span>예약 · 상담으로 시간 조율</span></li>
           </ul>
         </div>
         <div>
@@ -1209,6 +1413,7 @@ footer .logo{font-size:22px;color:var(--ink)}
       <p class="en">FITNESS</p>
       <h2>헬스 소개</h2>
       <nav class="subnav" aria-label="헬스 소개 하위 메뉴"><a href="#tour">머신투어</a><a href="#reward">출석보상</a><a href="#gym-price">가격안내</a></nav>
+      <a class="psum" href="#gym-price"><span>헬스 1개월 <b>15만원</b> · 12개월 <b>월 5.4만원</b></span><i>가격 바로 보기 ↓</i></a>
     </div>
 
     <div class="part" id="tour">
@@ -1299,7 +1504,7 @@ footer .logo{font-size:22px;color:var(--ink)}
       </div>
       <p class="once pl-once"><span>1인 1회 한정 프로그램</span></p>
 
-      <p class="mt-h">배울 수 있는 기구 예시</p>
+      <details class="mt-more"><summary>배울 수 있는 기구 예시 보기</summary>
       <div class="tabs" role="tablist" aria-label="머신 투어 기구" id="mtabs">
         <button role="tab" aria-selected="true">전체</button>
         <button role="tab" aria-selected="false">상체</button>
@@ -1307,7 +1512,8 @@ footer .logo{font-size:22px;color:var(--ink)}
         <button role="tab" aria-selected="false">유산소</button>
       </div>
       <div class="grid" id="machines"></div>
-          </div>
+      </details>
+    </div>
 
     <div class="part" id="reward">
       <div class="st">
@@ -1323,6 +1529,14 @@ footer .logo{font-size:22px;color:var(--ink)}
         <p class="en">PRICE</p>
         <h3>가격안내</h3>
         <p>PT 패키지 가격은 <a href="#pt-price" style="color:var(--brand);border-bottom:1px solid currentColor">PT 소개 > PT 가격안내</a>에서 볼 수 있습니다.</p>
+      </div>
+      <div class="why">
+        <p class="why-h">왜 이 가격일까요?</p>
+        <ul>
+          <li><b>회원 50명 한정</b><span>기구를 기다리지 않고, 트레이너가 한 명 한 명을 기억합니다</span></li>
+          <li><b>출석하면 기간 추가</b><span>주 3회 1년 나오면 헬스 약 +50일</span></li>
+          <li><b>머신투어</b><span>처음이라면 기구 사용법을 내 폰에 영상으로 (별도)</span></li>
+        </ul>
       </div>
       <table class="ptable">
         <caption>헬스 이용권</caption>
@@ -1366,6 +1580,7 @@ footer .logo{font-size:22px;color:var(--ink)}
       <h2>PT 소개</h2>
       <p>모든 PT는 같은 순서로 시작하고, 목적에 따라 내용이 달라집니다. 코스마다 숫자로 확인할 수 있는 목표를 정해 둡니다.</p>
       <nav class="subnav" aria-label="PT 소개 하위 메뉴"><a href="#pt-start">PT 시작 과정</a><a href="#pt-posture">자세 &amp; 체형교정</a><a href="#pt-fitness">체력 만들기</a><a href="#pt-diet">다이어트</a><a href="#pt-one">1개 만들기 프로젝트</a><a href="#pt-weekend">주말 PT</a><a href="#pt-trial">1회 체험 PT</a><a href="#pt-price">PT 가격안내</a></nav>
+      <a class="psum" href="#pt-price"><span>PT 5회 <b>35만원</b>부터 · 48회 <b>회당 4.8만원</b></span><i>가격 바로 보기 ↓</i></a>
     </div>
     <div class="part" id="pt-start">
       <div class="st"><p class="en">01 · PROCESS</p><h3>PT는 이렇게 시작합니다</h3><p>어떤 목표든 같은 순서로 시작합니다. 내 몸과 원하는 방향을 먼저 듣고, 운동 방향을 정한 뒤, 함께 수업합니다.</p></div>
@@ -1476,14 +1691,14 @@ footer .logo{font-size:22px;color:var(--ink)}
         <li><b>헬스 추가</b>1개월 +5만원 · 2개월 +8만원</li>
         <li><b>기존 헬스 회원</b>추가 결제 없음</li>
       </ul>
-      <div class="wk-foot"><p>담당 <a href="#trainers">강정우 트레이너</a> · 토·일요일 오전만 수업 · 상담과 예약은 플랜짐 데스크</p><a class="wk-btn" href="http://pf.kakao.com/_lMxgLxj/chat" target="_blank" rel="noopener">주말 PT 상담하기</a></div>
+      <div class="wk-foot"><p>담당 <a href="#trainers">강정우 트레이너</a> · 토·일요일 오전만 수업 · 상담은 카카오톡 · 전화 <a href="tel:0269537017">02-6953-7017</a></p><a class="wk-btn" href="http://pf.kakao.com/_lMxgLxj/chat" target="_blank" rel="noopener">주말 PT 상담하기</a></div>
     </div>
 
     <div class="tband" id="pt-trial">
       <div class="tb-l">
         <p class="tb-k">PT가 처음이라면</p>
         <h4>1회 체험 PT <b>20,000<small>원</small></b></h4>
-        <p class="tb-d">오전 08:00 – 12:00 중 1시간 · 간단한 체형 평가와 맛보기 수업</p>
+        <p class="tb-d">원하는 시간은 예약 · 상담으로 맞춰 드려요 · 1시간 체형 평가와 맛보기 수업</p>
       </div>
       <div class="tb-acts"><a class="tb-btn" href="https://booking.naver.com/booking/13/bizes/860812" target="_blank" rel="noopener"><span class="nb">N</span>네이버로 바로 예약</a><a class="tb-tel" href="tel:0269537017">전화 문의 02-6953-7017</a></div>
     </div>
@@ -1493,11 +1708,11 @@ footer .logo{font-size:22px;color:var(--ink)}
       <div class="pt-cols">
         <div class="pt-col">
           <p class="pt-h"><b>주 1회</b><span>천천히, 꾸준하게</span></p>
-          <table class="ptable"><thead><tr><th>횟수</th><th>기간</th><th>신규</th><th class="re">재등록<small class="rv-c">리뷰 작성 시</small></th></tr></thead><tbody><tr><td>5회</td><td>1개월</td><td class="won">350,000원</td><td class="won re">325,000원</td></tr><tr><td>15회</td><td>4개월</td><td class="won">950,000원</td><td class="won re">900,000원</td></tr><tr><td>24회</td><td>6개월</td><td class="won">1,400,000원</td><td class="won re">1,325,000원</td></tr><tr><td>32회</td><td>8개월</td><td class="won">1,700,000원</td><td class="won re">1,600,000원</td></tr><tr><td>48회</td><td>12개월</td><td class="won">2,600,000원</td><td class="won re">2,450,000원</td></tr></tbody></table>
+          <table class="ptable"><thead><tr><th>횟수</th><th>기간</th><th>신규</th><th class="re">재등록<small class="rv-c">리뷰 작성 시</small></th></tr></thead><tbody><tr><td>5회</td><td>1개월</td><td class="won">350,000원<small class="mo">회당 70,000원</small></td><td class="won re">325,000원<small class="mo">회당 65,000원</small></td></tr><tr><td>15회</td><td>4개월</td><td class="won">950,000원<small class="mo">회당 약 63,300원</small></td><td class="won re">900,000원<small class="mo">회당 60,000원</small></td></tr><tr><td>24회</td><td>6개월</td><td class="won">1,400,000원<small class="mo">회당 약 58,300원</small></td><td class="won re">1,325,000원<small class="mo">회당 약 55,200원</small></td></tr><tr><td>32회</td><td>8개월</td><td class="won">1,700,000원<small class="mo">회당 약 53,100원</small></td><td class="won re">1,600,000원<small class="mo">회당 50,000원</small></td></tr><tr><td>48회</td><td>12개월</td><td class="won">2,600,000원<small class="mo">회당 약 54,200원</small></td><td class="won re">2,450,000원<small class="mo">회당 약 51,000원</small></td></tr></tbody></table>
         </div>
         <div class="pt-col hl">
           <p class="pt-h"><b>주 2회</b><span>빠르게 변화를 보고 싶다면</span></p>
-          <table class="ptable"><thead><tr><th>횟수</th><th>기간</th><th>신규</th><th class="re">재등록<small class="rv-c">리뷰 작성 시</small></th></tr></thead><tbody><tr><td>5회</td><td>1개월</td><td class="won">350,000원</td><td class="won re">325,000원</td></tr><tr><td>15회</td><td>2개월</td><td class="won">850,000원</td><td class="won re">800,000원</td></tr><tr><td>24회</td><td>3개월</td><td class="won">1,250,000원</td><td class="won re">1,175,000원</td></tr><tr><td>32회</td><td>4개월</td><td class="won">1,500,000원</td><td class="won re">1,400,000원</td></tr><tr><td>48회</td><td>6개월</td><td class="won">2,300,000원</td><td class="won re">2,150,000원</td></tr></tbody></table>
+          <table class="ptable"><thead><tr><th>횟수</th><th>기간</th><th>신규</th><th class="re">재등록<small class="rv-c">리뷰 작성 시</small></th></tr></thead><tbody><tr><td>5회</td><td>1개월</td><td class="won">350,000원<small class="mo">회당 70,000원</small></td><td class="won re">325,000원<small class="mo">회당 65,000원</small></td></tr><tr><td>15회</td><td>2개월</td><td class="won">850,000원<small class="mo">회당 약 56,700원</small></td><td class="won re">800,000원<small class="mo">회당 약 53,300원</small></td></tr><tr><td>24회</td><td>3개월</td><td class="won">1,250,000원<small class="mo">회당 약 52,100원</small></td><td class="won re">1,175,000원<small class="mo">회당 약 49,000원</small></td></tr><tr><td>32회</td><td>4개월</td><td class="won">1,500,000원<small class="mo">회당 약 46,900원</small></td><td class="won re">1,400,000원<small class="mo">회당 약 43,800원</small></td></tr><tr><td>48회</td><td>6개월</td><td class="won">2,300,000원<small class="mo">회당 약 47,900원</small></td><td class="won re">2,150,000원<small class="mo">회당 약 44,800원</small></td></tr></tbody></table>
         </div>
       </div>
       <div class="dc" id="pt-discount">
@@ -1524,13 +1739,14 @@ footer .logo{font-size:22px;color:var(--ink)}
 
     </div>
     <div class="rv-top">
-      <blockquote class="rv-quote"><p>“운동 나오게 돕는 기믹들이<br>많아서 좋습니다.”</p><cite>2년 만에 복귀한 회원 tld***</cite></blockquote>
+      <blockquote class="rv-quote"><p>“자세 하나하나를<br>꼼꼼히 봐주세요.”</p><cite>리뷰 16개 중 12개가 꼽은 한마디</cite></blockquote>
       <div class="rv-sum"><p class="rv-sum-h">리뷰 16개에서 가장 많이 받은 평가</p><ol class="rv-bars"><li><span class="k">자세를 꼼꼼히 봐주세요</span><span class="bar2"><i style="width:75%"></i></span><b>12</b></li><li><span class="k">시설이 깔끔해요</span><span class="bar2"><i style="width:69%"></i></span><b>11</b></li><li><span class="k">맞춤 케어를 잘해줘요</span><span class="bar2"><i style="width:62%"></i></span><b>10</b></li><li><span class="k">친절해요</span><span class="bar2"><i style="width:56%"></i></span><b>9</b></li><li><span class="k">수업이 체계적이에요</span><span class="bar2"><i style="width:50%"></i></span><b>8</b></li></ol></div>
     </div>
     <div class="bax-wrap">
       <p class="bax-en">BEFORE &amp; AFTER</p>
       <h3 class="bax-h">플랜짐 회원들의 실제 변화</h3>
-      <div class="bax-grid"><figure class="bax"><div class="bax-img"><img src="img/p41.webp" alt="회원 변화 사례 1 운동 전후 비교" loading="lazy"><span class="bl">BEFORE</span><span class="br">AFTER</span></div><figcaption><p class="bx-top"><span class="bx-no">CASE 01</span><span class="bx-per">8개월</span></p><p class="bx-head">체중 -10.2kg</p><ul class="bx-st"><li><span class="k">체중</span><span class="v">67.9 → <b>57.7</b></span><span class="d">-10.2kg</span></li><li><span class="k">골격근량</span><span class="v">24.1 → <b>23.5</b></span><span class="d mu">-0.6kg</span></li><li><span class="k">체지방률</span><span class="v">35.0 → <b>25.3</b></span><span class="d">-9.7%p</span></li></ul><div class="bx-raw"><span>인바디 기록 원본</span><img src="img/p42.webp" alt="CASE 01 인바디 변화 기록 화면" loading="lazy"></div></figcaption></figure><figure class="bax"><div class="bax-img"><img src="img/p43.webp" alt="회원 변화 사례 2 운동 전후 비교" loading="lazy"><span class="bl">BEFORE</span><span class="br">AFTER</span></div><figcaption><p class="bx-top"><span class="bx-no">CASE 02</span><span class="bx-per">6개월</span></p><p class="bx-head">근육량 +5.9kg</p><ul class="bx-st"><li><span class="k">체중</span><span class="v">70 → <b>76</b></span><span class="d up">+6kg</span></li><li><span class="k">근육량</span><span class="v">32.2 → <b>38.1</b></span><span class="d up">+5.9kg</span></li><li><span class="k">체지방률</span><span class="v">19.6 → <b>12.2</b></span><span class="d">-7.4%p</span></li></ul></figcaption></figure><figure class="bax"><div class="bax-img"><img src="img/p44.webp" alt="회원 변화 사례 3 운동 전후 비교" loading="lazy"><span class="bl">BEFORE</span><span class="br">AFTER</span></div><figcaption><p class="bx-top"><span class="bx-no">CASE 03</span><span class="bx-per">5개월</span></p><p class="bx-head">체중 -7.2kg</p><ul class="bx-st"><li><span class="k">체중</span><span class="v">70.2 → <b>63.0</b></span><span class="d">-7.2kg</span></li><li><span class="k">골격근량</span><span class="v">24.6 → <b>24.4</b></span><span class="d mu">-0.2kg</span></li><li><span class="k">체지방률</span><span class="v">36.2 → <b>28.8</b></span><span class="d">-7.4%p</span></li></ul><div class="bx-raw"><span>인바디 기록 원본</span><img src="img/p45.webp" alt="CASE 03 인바디 변화 기록 화면" loading="lazy"></div></figcaption></figure><figure class="bax"><div class="bax-img"><img src="img/p46.webp" alt="회원 변화 사례 4 운동 전후 비교" loading="lazy"><span class="bl">BEFORE</span><span class="br">AFTER</span></div><figcaption><p class="bx-top"><span class="bx-no">CASE 04</span><span class="bx-per">9개월</span></p><p class="bx-head">체중 -13.7kg</p><ul class="bx-st"><li><span class="k">체중</span><span class="v">74.2 → <b>60.5</b></span><span class="d">-13.7kg</span></li><li><span class="k">골격근량</span><span class="v">25.3 → <b>24.1</b></span><span class="d mu">-1.2kg</span></li><li><span class="k">체지방률</span><span class="v">37.8 → <b>26.9</b></span><span class="d">-10.9%p</span></li></ul><div class="bx-raw"><span>인바디 기록 원본</span><img src="img/p47.webp" alt="CASE 04 인바디 변화 기록 화면" loading="lazy"></div></figcaption></figure></div>
+      <p class="bax-sub"><b>근육손실 없이</b>, 체지방만 덜어냈습니다.</p>
+      <div class="bax-grid"><figure class="bax"><div class="bax-img"><img src="img/p41.webp" alt="회원 변화 사례 1 운동 전후 비교" loading="lazy"><span class="bl">BEFORE</span><span class="br">AFTER</span></div><figcaption><p class="bx-top"><span class="bx-no">CASE 01</span><span class="bx-per">8개월</span></p><p class="bx-head">체중 -10.2kg<em class="nl">근육손실 없이</em></p><ul class="bx-st"><li><span class="k">체중</span><span class="v">67.9 → <b>57.7</b></span><span class="d">-10.2kg</span></li><li><span class="k">골격근량</span><span class="v">24.1 → <b>23.5</b></span><span class="d mu">-0.6kg</span></li><li><span class="k">체지방률</span><span class="v">35.0 → <b>25.3</b></span><span class="d">-9.7%p</span></li></ul><div class="bx-raw"><span>인바디 기록 원본</span><img src="img/p42.webp" alt="CASE 01 인바디 변화 기록 화면" loading="lazy"></div></figcaption></figure><figure class="bax"><div class="bax-img"><img src="img/p43.webp" alt="회원 변화 사례 2 운동 전후 비교" loading="lazy"><span class="bl">BEFORE</span><span class="br">AFTER</span></div><figcaption><p class="bx-top"><span class="bx-no">CASE 02</span><span class="bx-per">6개월</span></p><p class="bx-head">근육량 +5.9kg</p><ul class="bx-st"><li><span class="k">체중</span><span class="v">70 → <b>76</b></span><span class="d up">+6kg</span></li><li><span class="k">근육량</span><span class="v">32.2 → <b>38.1</b></span><span class="d up">+5.9kg</span></li><li><span class="k">체지방률</span><span class="v">19.6 → <b>12.2</b></span><span class="d">-7.4%p</span></li></ul></figcaption></figure><figure class="bax"><div class="bax-img"><img src="img/p44.webp" alt="회원 변화 사례 3 운동 전후 비교" loading="lazy"><span class="bl">BEFORE</span><span class="br">AFTER</span></div><figcaption><p class="bx-top"><span class="bx-no">CASE 03</span><span class="bx-per">5개월</span></p><p class="bx-head">체중 -7.2kg<em class="nl">근육손실 없이</em></p><ul class="bx-st"><li><span class="k">체중</span><span class="v">70.2 → <b>63.0</b></span><span class="d">-7.2kg</span></li><li><span class="k">골격근량</span><span class="v">24.6 → <b>24.4</b></span><span class="d mu">-0.2kg</span></li><li><span class="k">체지방률</span><span class="v">36.2 → <b>28.8</b></span><span class="d">-7.4%p</span></li></ul><div class="bx-raw"><span>인바디 기록 원본</span><img src="img/p45.webp" alt="CASE 03 인바디 변화 기록 화면" loading="lazy"></div></figcaption></figure><figure class="bax"><div class="bax-img"><img src="img/p46.webp" alt="회원 변화 사례 4 운동 전후 비교" loading="lazy"><span class="bl">BEFORE</span><span class="br">AFTER</span></div><figcaption><p class="bx-top"><span class="bx-no">CASE 04</span><span class="bx-per">9개월</span></p><p class="bx-head">체중 -13.7kg<em class="nl">근육손실 없이</em></p><ul class="bx-st"><li><span class="k">체중</span><span class="v">74.2 → <b>60.5</b></span><span class="d">-13.7kg</span></li><li><span class="k">골격근량</span><span class="v">25.3 → <b>24.1</b></span><span class="d mu">-1.2kg</span></li><li><span class="k">체지방률</span><span class="v">37.8 → <b>26.9</b></span><span class="d">-10.9%p</span></li></ul><div class="bx-raw"><span>인바디 기록 원본</span><img src="img/p47.webp" alt="CASE 04 인바디 변화 기록 화면" loading="lazy"></div></figcaption></figure></div>
       <p class="bax-note">회원 동의를 받아 게시한 사진과 인바디 기록이며, 결과는 개인에 따라 다를 수 있습니다.</p>
     </div>
     <div class="rv-grid">
@@ -1620,7 +1836,7 @@ footer .logo{font-size:22px;color:var(--ink)}
       <p class="no">06</p>
       <p class="en">YOUTUBE</p>
       <h2>생존근육 프로젝트</h2>
-      <p>트레이너가 알려주는 운동법과 회원들의 변화 과정을 영상으로 만나보세요.</p>
+      <p><b class="yt-own">플랜짐에서 운영하는 유튜브 채널</b>트레이너가 알려주는 운동법과 회원들의 변화 과정을 영상으로 만나보세요.</p>
     </div>
     <div class="yt">
       <a class="video" href="https://youtu.be/ThFFQ5Thiuw" target="_blank" rel="noopener"><div class="thumb"><img src="img/p79.webp" alt="엉덩이 95% 쓰기 썸네일" loading="lazy"></div><div class="vmeta"><span class="av">생존</span><div><h4>엉덩이 95% 쓰기, 천국의 계단 타는 법</h4><p class="ch">생존근육 프로젝트</p></div></div></a>
@@ -1636,7 +1852,8 @@ footer .logo{font-size:22px;color:var(--ink)}
 <footer>
   <div class="wrap">
     <span class="logo">PLAN<i>GYM</i></span>
-    <span>서울 강동구 암사길 49 · 상담 02-6953-7017 · @plangym_armsa</span>
+    <span>서울 강동구 암사길 49 · 상담 02-6953-7017</span>
+    <nav class="ft-sns" aria-label="플랜짐 SNS"><a class="ft-sns-i" href="https://www.instagram.com/plangym_armsa/" target="_blank" rel="noopener" title="인스타그램"><span class="ic insta"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="10" width="20" height="20" rx="6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="20" cy="20" r="4.6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="25.6" cy="14.4" r="1.5" fill="#fff"/></svg></span><span>인스타그램</span></a><a class="ft-sns-i" href="https://www.youtube.com/@saengjonmuscle" target="_blank" rel="noopener" title="유튜브"><span class="ic yt2"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="12" width="24" height="16" rx="5" fill="#fff"/><path d="M18 16.5v7l6-3.5z" fill="#ff0033"/></svg></span><span>유튜브</span></a><a class="ft-sns-i" href="https://talk.naver.com/profile/w4kkz9" target="_blank" rel="noopener" title="네이버 톡톡"><span class="ic naver"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 8h26a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3H20l-7 6v-6H7a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3z" fill="#fff"/><path d="M14 13h4l4.5 6.5V13h4v13h-4L18 19.5V26h-4z" fill="#03c75a"/></svg></span><span>네이버 톡톡</span></a></nav>
   </div>
 </footer>
 
@@ -1766,20 +1983,42 @@ document.querySelectorAll('.qw-i[data-todo]').forEach(a=>a.addEventListener('cli
 
 document.querySelectorAll('.att-clone').forEach(box=>{const src=document.getElementById(box.dataset.src);if(!src)return;
   box.innerHTML=src.innerHTML;box.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));
-  const hx=box.parentNode.querySelector('.hx');const fig=box.querySelector('.tix');if(hx&&fig){const g=fig.querySelector('.gain');g.after(hx);}
+  const hx=box.parentNode.querySelector('.hx');const fig=box.querySelector('.tix');if(hx&&fig){const g=fig.querySelector('.hm2');if(g)g.after(hx);}
   });
 </script>
 <aside class="qw" aria-label="예약 및 문의">
   <p class="qw-h">예약<br><small>및</small><br>문의</p>
   <a class="qw-i qw-book" href="https://booking.naver.com/booking/13/bizes/860812" target="_blank" rel="noopener" title="네이버 예약"><span class="ic nbook"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="10" width="24" height="22" rx="3" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M8 16h24M14 7v6M26 7v6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><path d="M15 21v7l10-7v7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg></span><span class="t">네이버 예약</span></a>
   <a class="qw-i" href="http://pf.kakao.com/_lMxgLxj/chat" target="_blank" rel="noopener" title="카카오톡 채널"><span class="ic kakao"><svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="18" rx="15" ry="11.5" fill="#3a1d1d"/><path d="M12 27l-2 7 7-5z" fill="#3a1d1d"/><text x="20" y="21.5" text-anchor="middle" font-size="9" font-weight="800" fill="#fee500" font-family="Arial,sans-serif">TALK</text></svg></span><span class="t">카카오</span></a>
-  <a class="qw-i" href="https://talk.naver.com/profile/w4kkz9" target="_blank" rel="noopener" title="네이버 톡톡"><span class="ic naver"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 8h26a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3H20l-7 6v-6H7a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3z" fill="#fff"/><path d="M14 13h4l4.5 6.5V13h4v13h-4L18 19.5V26h-4z" fill="#03c75a"/></svg></span><span class="t">네이버 톡톡</span></a>
   <a class="qw-i" href="tel:0269537017" title="02-6953-7017"><span class="ic tel"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M14.5 9.5c.8-.8 2-.8 2.7.1l2.6 3.4c.6.8.5 1.9-.2 2.6l-1.9 1.8c1.3 2.8 3.6 5.1 6.4 6.4l1.8-1.9c.7-.7 1.8-.8 2.6-.2l3.4 2.6c.9.7.9 1.9.1 2.7l-1.6 1.6c-1.4 1.4-3.5 1.9-5.4 1.1-6-2.4-10.7-7.1-13.1-13.1-.8-1.9-.3-4 1.1-5.4z" fill="#1f9d5a"/></svg></span><span class="t">전화문의</span></a>
-  <span class="qw-gap" aria-hidden="true"></span>
-  <a class="qw-i" href="https://www.instagram.com/plangym_armsa/" target="_blank" rel="noopener" title="인스타그램"><span class="ic insta"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="10" width="20" height="20" rx="6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="20" cy="20" r="4.6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="25.6" cy="14.4" r="1.5" fill="#fff"/></svg></span><span class="t">인스타그램</span></a>
-  <a class="qw-i" href="https://www.youtube.com/@saengjonmuscle" target="_blank" rel="noopener" title="유튜브"><span class="ic yt2"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="12" width="24" height="16" rx="5" fill="#fff"/><path d="M18 16.5v7l6-3.5z" fill="#ff0033"/></svg></span><span class="t">유튜브</span></a>
 </aside>
 <script>(function(){var b=document.getElementById("apptabs");if(!b)return;var bs=[].slice.call(b.querySelectorAll("[role=tab]")),ps=[].slice.call(document.querySelectorAll("#app .apx-p"));function sel(i){bs.forEach(function(x,j){x.setAttribute("aria-selected",j===i);x.tabIndex=j===i?0:-1});ps.forEach(function(p,j){p.hidden=j!==i;if(j===i)p.querySelectorAll("img").forEach(function(im){im.loading="eager"})})}b.addEventListener("click",function(e){var t=e.target.closest("[role=tab]");if(t)sel(bs.indexOf(t))});b.addEventListener("keydown",function(e){var c=bs.findIndex(function(x){return x.getAttribute("aria-selected")==="true"}),n=null;if(e.key==="ArrowRight")n=(c+1)%bs.length;if(e.key==="ArrowLeft")n=(c-1+bs.length)%bs.length;if(n!==null){e.preventDefault();sel(n);bs[n].focus()}});})();</script>
+<script>
+/* 출석 계산기 */
+(function(){
+  function tk(n){return n<=100?5*n:n<=200?500+10*(n-100):1500+15*(n-200)}
+  document.querySelectorAll('[data-calc]').forEach(function(c){
+    var st={f:3,w:52};
+    function o(k){return c.querySelector('[data-o="'+k+'"]')}
+    function render(){
+      var V=st.f*st.w,T=tk(V),d=Math.floor(T/200)*10,p=Math.floor(T/300);
+      o('v').textContent=V.toLocaleString('ko-KR');o('t').textContent=T.toLocaleString('ko-KR');
+      o('d').textContent='+'+d;o('p').textContent='+'+p;
+      o('w').innerHTML='헬스 1년권(650,000원) 하루 가격으로 치면 약 <b>'+(Math.round(d*650000/365/1000)/10)+'만원</b>어치예요.';
+      var h='<span class="rls">',seg=[[0,100,'a'],[100,200,'b'],[200,1e9,'c']];
+      seg.forEach(function(g){if(g[0]<V){var l=g[0]/V*100,w=(Math.min(g[1],V)-g[0])/V*100;h+='<span class="rl '+g[2]+'" style="left:'+l+'%;width:'+w+'%"></span>'}});h+='</span>';
+      var k=1;for(var n=1;n<=V;n++){if(tk(n)>=200*k){h+='<span class="mk" style="left:'+(n/V*100)+'%"></span>';k++}}
+      [100,200].forEach(function(x){if(x<V-15)h+='<span class="tl" style="left:'+(x/V*100)+'%">'+x+'번</span>'});
+      h+='<span class="tl" style="left:0;transform:none">출석 0번</span><span class="tl" style="left:auto;right:0;transform:none">'+V+'번</span>';
+      o('trk').innerHTML=h;
+    }
+    c.addEventListener('click',function(e){var b=e.target.closest('.cseg button');if(!b)return;var g=b.parentNode;
+      g.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});
+      st[g.dataset.k]=+b.dataset.v;render()});
+    render();
+  });
+})();
+</script>
 <script>
 /* 펼친 챕터의 사진은 바로 불러오기 (일부 모바일 브라우저에서 숨김 영역의 지연 로딩이 멈추는 문제 방지) */
 (function(){
