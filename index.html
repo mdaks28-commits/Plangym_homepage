@@ -132,6 +132,12 @@ nav .sub a:hover{color:var(--brand);background:var(--soft)}
 .pillar .big{margin:14px 0 0}
 .pillar .big.inf{margin-top:8px}
 .pillar .big.emo{margin-top:10px}
+.pillar .big.xl{font-size:88px;line-height:.85;margin-top:16px}
+.pillar .big.xl small{font-size:26px;margin-left:4px}
+.pillar .big.txt{font-family:var(--sans);font-size:clamp(28px,2.6vw,36px);font-weight:800;letter-spacing:-.04em;line-height:1.2;white-space:normal;margin-top:18px;color:#2f5245}
+.pillar.hot .big.txt{color:#1b1f1d}
+.pillars{align-items:stretch}
+@media (max-width:760px){.pillar .big.xl{font-size:72px}.pillar .big.txt{font-size:30px}.pillar .mbr{display:none}}
 .pillar .big.inf{font-family:var(--sans);font-size:64px;font-weight:400;line-height:.8}
 .pillar .big.emo{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:40px;line-height:1;letter-spacing:-.05em}
 .pillar p.d b{color:#1b1f1d;font-weight:800}
@@ -1172,9 +1178,9 @@ footer .logo{font-size:22px;color:var(--ink)}
       </div>
     </div>
     <div class="pillars">
-      <div class="pillar"><h2><span class="pn">01</span>인원제한</h2><p class="big" aria-hidden="true">50<small>명</small></p><p class="d">50명 인원제한으로 피크타임에도 쾌적하게.</p></div>
-      <a class="pillar hot" href="#attendance"><h2><span class="pn">02</span>미친 출석보상</h2><p class="big inf" aria-hidden="true">∞</p><p class="d">출석할수록, 오래 다닐수록<br><b>재등록 할인율 UP · 헬스 기간 UP · PT 횟수 UP</b> <span class="go">내 출석으로 계산해 보기 →</span></p></a>
-      <div class="pillar"><h2><span class="pn">03</span>당신의 STORY</h2><p class="big emo" aria-hidden="true">👉🧑</p><p class="d">여러분의 건강 HISTORY를 들려주세요.<br>거기서 시작하겠습니다.</p></div>
+      <div class="pillar"><h2><span class="pn">01</span>인원제한</h2><p class="big xl">50<small>명</small></p></div>
+      <a class="pillar hot" href="#attendance"><h2><span class="pn">02</span>미친 출석보상</h2><p class="big txt">출석 = 혜택</p></a>
+      <div class="pillar"><h2><span class="pn">03</span>당신의 STORY</h2><p class="big txt">여러분의<br class="mbr"> 이야기부터</p></div>
     </div>
     <span class="scrollhint" aria-hidden="true">SCROLL</span>
   </div>
