@@ -1025,6 +1025,42 @@ footer .logo{font-size:22px;color:var(--ink)}
 .cur-nav a i{font-style:normal;width:22px;height:22px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;font-size:12px;font-weight:800}
 .cur-nav a:hover{border-color:var(--brand)}
 
+.rws{list-style:none;margin:0;padding:0;display:grid;gap:24px}
+.rw{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:center;background:var(--soft);border-radius:28px;padding:44px}
+.rw.rw-wide{grid-template-columns:1fr}
+.rw-n{margin:0;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--brand)}
+.rw-n b{width:30px;height:30px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;font-size:15px;letter-spacing:0}
+.rw-t h4{margin:14px 0 0;font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.04em;line-height:1.3}
+.rw-t>p:not(.rw-n):not(.rw-cap){margin:12px 0 0;font-size:16px;line-height:1.7;color:var(--sub);max-width:34em}
+.rw-ph{margin:0;min-width:0}
+.rw-ph img{display:block;width:100%;border-radius:16px;box-shadow:0 12px 30px rgba(20,20,60,.16)}
+.rw-ph figcaption{margin-top:10px;font-size:13px;font-weight:600;color:var(--sub);text-align:center}
+.rw-v1{display:grid;grid-template-columns:.9fr 1fr;gap:20px;align-items:center}
+.rw-app{display:grid;gap:16px}
+.rw-tip{margin:0;background:var(--bg);border-radius:14px;padding:14px 16px;font-size:14px;line-height:1.6;color:var(--sub)}
+.rw-tip span{margin-right:6px}.rw-tip b{color:var(--ink)}
+.rw-gal{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;align-items:start}
+.rw-stats{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rw-stats div{background:#211c4a;color:#fff;border-radius:16px;padding:16px 18px}
+.rw-stats span{display:block;font-size:13px;color:rgba(255,255,255,.7)}
+.rw-stats b{display:block;margin-top:4px;font-size:clamp(24px,2.4vw,30px);font-weight:800;color:#ffe14d;letter-spacing:-.02em}
+.rw-stats small{font-size:13px;color:rgba(255,255,255,.75)}
+.rw-ex{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.rw-ex li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;color:var(--sub)}
+.rw-ex b{color:var(--brand)}
+.rw-cap{margin:10px 0 0;font-size:12.5px;color:var(--muted)}
+.rw-v3{display:grid;grid-template-columns:1.1fr 1fr;gap:18px;align-items:start}
+@media (max-width:860px){
+  .rw{grid-template-columns:1fr;gap:26px;padding:28px 18px;border-radius:22px}
+  .rw-gal{display:block;columns:2;column-gap:12px}
+  .rw-gal .rw-ph{break-inside:avoid;margin-bottom:16px}
+  .rw-ph figcaption{font-size:12px}
+  .rw-v1{grid-template-columns:1fr 1fr;gap:12px}
+  .rw-v3{grid-template-columns:1fr 1fr;gap:12px}
+  .rw-stats b{font-size:21px;white-space:nowrap}
+  .rw-stats div{padding:14px}
+}
+
 .appshow{margin-top:48px;background:#1b1640;color:#f1effa;display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding:56px 56px 0;overflow:hidden;border-radius:4px}
 .as-txt{padding-bottom:56px}
 .as-txt .en{font-family:var(--serif);font-size:13px;letter-spacing:.24em;color:#b8acff;font-weight:600}
@@ -1294,35 +1330,23 @@ footer .logo{font-size:22px;color:var(--ink)}
         <p class="en">ATTENDANCE REWARD</p>
         <h3>출석보상</h3>
       </div>
-      <div class="tabs apx-tabs" role="tablist" aria-label="플랜짐 앱 기능" id="apptabs">
-        <button role="tab" aria-selected="true">티켓 적립</button>
-        <button role="tab" aria-selected="false">할인율 UP</button>
-        <button role="tab" aria-selected="false">보상 상자</button>
-        <button role="tab" aria-selected="false">PT 기록</button>
-      </div>
-      <div class="apx">
-        <div class="apx-p" role="tabpanel">
-          <div class="apx-t"><p class="apx-k">01 · CHECK</p><h4>QR 한 번 찍으면<br>티켓이 쌓입니다</h4><p>입실할 때 QR을 찍고, 나갈 때 퇴실 Check. 출석할 때마다 티켓이 쌓이고, 내 출석 달력이 초록색으로 채워집니다.</p>
-            <ul><li>입실 QR · 퇴실 Check</li><li>1회 출석마다 티켓 적립</li><li>월간 출석 순위에 따라 티켓 버프</li></ul></div>
-          <div class="apx-phs"><figure class="apx-ph"><img src="img/app-home.webp" alt="플랜짐 앱 홈 화면: 출석 Check, ROOM 점수, 티켓, 재등록 할인, 출석 순위" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-cal.webp" alt="플랜짐 앱 출석 달력" loading="lazy"></figure></div>
-        </div>
-        <div class="apx-p" role="tabpanel" hidden>
-          <div class="apx-t"><p class="apx-k">02 · GROW</p><h4>방이 클수록<br>재등록 할인이 커집니다</h4><p>출석 점수가 쌓이면 내 방(ROOM)이 업그레이드되고, 방이 올라갈수록 재등록 할인율이 커집니다. 캐릭터와 장비 아이템으로 POWER도 키워 보세요.</p>
-            <ul><li>ROOM 단계마다 재등록 할인 UP</li><li>캐릭터 6단계 해금</li><li>운동 장비 아이템 수집</li></ul></div>
-          <div class="apx-phs"><figure class="apx-ph"><img src="img/app-char-m.webp" alt="플랜짐 앱 캐릭터 화면: 해금한 캐릭터와 다음 단계" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-char-f.webp" alt="플랜짐 앱 캐릭터 화면: 여성 캐릭터 6단계" loading="lazy"></figure></div>
-        </div>
-        <div class="apx-p" role="tabpanel" hidden>
-          <div class="apx-t"><p class="apx-k">03 · REWARD</p><h4>꾸준히 나온 주에는<br>보상 상자가 옵니다</h4><p>출석이 많을수록 상자 개수가, POWER가 높을수록 상자 등급이 올라갑니다. 퇴실까지 체크하면 퇴근가방도 함께 성장해요.</p>
-            <ul><li>주 1 · 3 · 5회 출석하면 상자 1 · 2 · 3개</li><li>POWER로 상자 등급 UP</li><li>누적 출석으로 퇴근가방 성급 UP</li></ul></div>
-          <div class="apx-phs"><figure class="apx-ph"><img src="img/app-week.webp" alt="플랜짐 앱 이번 주 보상: 상자 등급과 받을 상자 수" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-bag.webp" alt="플랜짐 앱 퇴실 Check: 퇴근가방 성장 현황" loading="lazy"></figure></div>
-        </div>
-        <div class="apx-p" role="tabpanel" hidden>
-          <div class="apx-t"><p class="apx-k">04 · PT</p><h4>수업이 끝나도<br>피드백이 남습니다</h4><p>남은 PT 횟수와 3대 운동 1RM 기록을 한눈에 봅니다. 수업이 끝나면 트레이너가 그날의 자세 피드백을 남겨 두어, 혼자 운동할 때도 다시 볼 수 있어요.</p>
-            <ul><li>PT 잔여 횟수 확인</li><li>벤치 · 데드 · 스쿼트 1RM 기록</li><li>수업마다 트레이너 피드백 노트</li></ul></div>
-          <div class="apx-phs"><figure class="apx-ph"><img src="img/app-pt.webp" alt="플랜짐 앱 PT 화면: 잔여 횟수와 1RM 기록" loading="lazy"></figure><figure class="apx-ph"><img src="img/app-note.webp" alt="플랜짐 앱 PT 수업 피드백 노트" loading="lazy"></figure></div>
-        </div>
-      </div>
-      <div class="apx-foot"><p>앱은 등록할 때 트레이너가 설치부터 사용법까지 직접 안내해 드립니다.</p></div>
+      <ol class="rws">
+        <li class="rw">
+          <div class="rw-t"><p class="rw-n"><b>1</b>STEP 1</p><h4>헬스장 QR코드를 촬영하세요!</h4><p>헬스장에 붙어 있는 출석 Check QR을 플랜짐 앱으로 찍으면 출석 끝. 운동을 마치고 나갈 때는 퇴실 체크까지 해 주세요.</p></div>
+          <div class="rw-v rw-v1"><figure class="rw-ph rw-photo"><img src="img/rw-qr.webp" alt="헬스장 벽에 비치된 출석·퇴실 체크 QR 보드" loading="lazy"><figcaption>헬스장에 비치된 출석 QR</figcaption></figure><div class="rw-app"><figure class="rw-ph rw-btn"><img src="img/rw-check.webp" alt="플랜짐 앱 홈의 출석 체크·퇴실 체크 버튼" loading="lazy"><figcaption>플랜짐 앱의 출석 체크 버튼</figcaption></figure><p class="rw-tip"><span>📱</span>앱 첫 화면에서 <b>출석 체크</b>를 누르고 QR을 비추면 끝!</p></div></div>
+        </li>
+        <li class="rw rw-wide">
+          <div class="rw-t"><p class="rw-n"><b>2</b>STEP 2</p><h4>올 때마다 출석 보상 아이템을 획득하세요!</h4><p>출석하고 퇴실하면 티켓이 쌓이고, 꾸준히 나온 주에는 보상 상자가 도착합니다. 상자를 열면 운동 장비 아이템이 나와요.</p></div>
+          <div class="rw-gal"><figure class="rw-ph"><img src="img/rw-ticket.webp" alt="플랜짐 앱: 퇴실 체크 보상 티켓 5장 획득" loading="lazy"><figcaption>출석 보상 티켓</figcaption></figure><figure class="rw-ph"><img src="img/rw-box.webp" alt="플랜짐 앱: 주간 리워드 보상상자 도착" loading="lazy"><figcaption>보상 상자 도착</figcaption></figure><figure class="rw-ph"><img src="img/rw-week.webp" alt="플랜짐 앱: 이번 주 보상, 출석할수록 상자 수 증가" loading="lazy"><figcaption>출석할수록 상자 UP</figcaption></figure><figure class="rw-ph"><img src="img/rw-bag.webp" alt="플랜짐 앱: 퇴근가방 성장 현황" loading="lazy"><figcaption>퇴근가방 보상</figcaption></figure><figure class="rw-ph"><img src="img/rw-newitem.webp" alt="플랜짐 앱: 새로 얻은 아이템 성능 비교" loading="lazy"><figcaption>새 아이템 획득</figcaption></figure></div>
+        </li>
+        <li class="rw">
+          <div class="rw-t"><p class="rw-n"><b>3</b>STEP 3</p><h4>아이템으로 헬스 기간, PT 횟수,<br class="pbr"> 재등록 할인율을 키우세요.</h4><p>좋은 아이템을 장착할수록 출석 1번에 받는 티켓과 재등록 할인율이 올라갑니다. 모은 티켓은 헬스 기간과 PT로 바꿔요.</p>
+            <div class="rw-stats"><div><span>재등록 할인</span><b>헬스 13.4%</b><small>PT 6.7%</small></div><div><span>출석 1번에 받는 티켓</span><b>+8.80장</b></div></div>
+            <ul class="rw-ex"><li>티켓 <b>200장</b> = 헬스 <b>10일</b></li><li>티켓 <b>300장</b> = PT <b>1회</b></li></ul>
+            <p class="rw-cap">실제 회원의 앱 화면 기준이에요.</p></div>
+          <div class="rw-v rw-v3"><figure class="rw-ph"><img src="img/rw-equip.webp" alt="플랜짐 앱 장비보관함: 캐릭터가 설치·착용 아이템을 장착한 모습" loading="lazy"><figcaption>아이템 장착</figcaption></figure><figure class="rw-ph"><img src="img/rw-home.webp" alt="플랜짐 앱 홈: 재등록 할인 PT 6.70% 헬스 13.40%, 1회 출석당 티켓 +8.80장" loading="lazy"><figcaption>재등록 할인율 · 티켓 획득량</figcaption></figure></div>
+        </li>
+      </ol>
     </div>
 
     <div class="part" id="hours">
@@ -1923,7 +1947,7 @@ document.querySelectorAll('.att-clone').forEach(box=>{const src=document.getElem
   <a class="qw-i" href="tel:0269537017" title="02-6953-7017"><span class="ic tel"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M14.5 9.5c.8-.8 2-.8 2.7.1l2.6 3.4c.6.8.5 1.9-.2 2.6l-1.9 1.8c1.3 2.8 3.6 5.1 6.4 6.4l1.8-1.9c.7-.7 1.8-.8 2.6-.2l3.4 2.6c.9.7.9 1.9.1 2.7l-1.6 1.6c-1.4 1.4-3.5 1.9-5.4 1.1-6-2.4-10.7-7.1-13.1-13.1-.8-1.9-.3-4 1.1-5.4z" fill="#1f9d5a"/></svg></span><span class="t">전화문의</span></a>
   <a class="qw-i" href="https://www.youtube.com/@saengjonmuscle" target="_blank" rel="noopener" title="유튜브"><span class="ic yt2"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="12" width="24" height="16" rx="5" fill="#fff"/><path d="M18 16.5v7l6-3.5z" fill="#ff0033"/></svg></span><span class="t">유튜브</span></a>
 </aside>
-<script>(function(){var b=document.getElementById("apptabs");if(!b)return;var bs=[].slice.call(b.querySelectorAll("[role=tab]")),ps=[].slice.call(document.querySelectorAll("#app .apx-p"));function sel(i){bs.forEach(function(x,j){x.setAttribute("aria-selected",j===i);x.tabIndex=j===i?0:-1});ps.forEach(function(p,j){p.hidden=j!==i;if(j===i)p.querySelectorAll("img").forEach(function(im){im.loading="eager"})})}b.addEventListener("click",function(e){var t=e.target.closest("[role=tab]");if(t)sel(bs.indexOf(t))});b.addEventListener("keydown",function(e){var c=bs.findIndex(function(x){return x.getAttribute("aria-selected")==="true"}),n=null;if(e.key==="ArrowRight")n=(c+1)%bs.length;if(e.key==="ArrowLeft")n=(c-1+bs.length)%bs.length;if(n!==null){e.preventDefault();sel(n);bs[n].focus()}});})();</script>
+
 <script>
 /* 출석 계산기 */
 (function(){
