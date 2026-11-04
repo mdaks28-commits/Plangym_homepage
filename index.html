@@ -125,6 +125,24 @@ nav .sub a:hover{color:var(--brand);background:var(--soft)}
 .pillar h2{grid-column:1;margin:6px 0 0;font-size:22px;font-weight:800;letter-spacing:-.025em;color:#1b1f1d;line-height:1.3}
 .pillar p.d{grid-column:1/-1;margin:12px 0 0;font-size:14px;line-height:1.65;color:#4a4f4c}
 .pillar.hot{background:#e7c98f}
+.whypg{margin-top:56px}
+.wp-k{margin:0;display:flex;align-items:center;gap:14px;font-size:14px;font-weight:800;letter-spacing:.08em;color:#c9a96e}
+.wp-k::after{content:"";width:44px;height:2px;background:#c9a96e}
+.wp-h{margin:8px 0 0;font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-.035em;color:#fff;line-height:1.2}
+.pillars.v2{margin-top:22px}
+.pillars.v2 .pillar{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#f6f1ea;padding:24px 24px 24px 28px}
+.pillars.v2 .pl-t{min-width:0}
+.pillars.v2 .pl-l{margin:0;display:flex;align-items:center;font-size:15px;font-weight:800;color:#1b1f1d}
+.pillars.v2 .pl-l .pn{color:#a38462;font-size:17px;letter-spacing:.02em}
+.pillars.v2 .pl-l .pn::after{content:"";display:inline-block;width:1.5px;height:13px;background:#a38462;margin:0 12px;vertical-align:-1px;opacity:.7}
+.pillars.v2 h2{margin:10px 0 0;display:block;font-size:clamp(20px,1.75vw,25px);word-break:keep-all;font-weight:800;letter-spacing:-.04em;color:#2f5245;line-height:1.25}
+.pillars.v2 .pl-s{margin:6px 0 0;font-size:15px;color:#4a4f4c}
+.pl-ic{flex:none;width:64px;height:64px;border-radius:50%;background:#e8e6dc;display:grid;place-items:center}
+.pl-ic svg{width:40px;height:40px;fill:none;stroke:#2f5245;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.pl-ic svg .f{fill:#2f5245;stroke:none}
+@media (max-width:1100px) and (min-width:761px){.pillars.v2 .pl-ic{width:56px;height:56px}.pl-ic svg{width:30px;height:30px}}
+@media (max-width:760px){.whypg{margin-top:44px}.pillars.v2{gap:12px}.pillars.v2 .pillar{padding:20px 18px 20px 22px}.pillars.v2 h2{font-size:25px}.pl-ic{width:64px;height:64px}.pl-ic svg{width:34px;height:34px}}
+
 .pillars .pillar{display:block}
 .pillar h2{margin:0;display:flex;align-items:baseline;gap:10px;font-size:20px}
 .pillar h2 .pn{font-size:15px;letter-spacing:.04em}
@@ -1177,10 +1195,11 @@ footer .logo{font-size:22px;color:var(--ink)}
         <a class="btn line" href="#attendance">출석 혜택 보기</a>
       </div>
     </div>
-    <div class="pillars">
-      <div class="pillar"><h2><span class="pn">01</span>인원제한</h2><p class="big xl">50<small>명</small></p></div>
-      <a class="pillar hot" href="#attendance"><h2><span class="pn">02</span>미친 출석보상</h2><p class="big txt">출석 = 혜택</p></a>
-      <div class="pillar"><h2><span class="pn">03</span>당신의 STORY</h2><p class="big txt">여러분의<br class="mbr"> 이야기부터</p></div>
+    <div class="whypg"><p class="wp-k">WHY PLANGYM</p><p class="wp-h">운동이 이어지는 이유</p></div>
+    <div class="pillars v2">
+      <div class="pillar"><div class="pl-t"><p class="pl-l"><span class="pn">01</span>정원제 운영</p><h2>50명 정원, 여유롭게</h2><p class="pl-s">붐비지 않는 쾌적한 운동 환경</p></div><span class="pl-ic"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="18" cy="17" r="7"/><path d="M5 39c0-7.5 5.8-12.5 13-12.5S31 31.5 31 39"/><circle cx="33" cy="20" r="5.5"/><path d="M30 28.2c1-.4 2-.5 3-.5 5.8 0 10 4.2 10 10.3"/></svg></span></div>
+      <a class="pillar" href="#attendance"><div class="pl-t"><p class="pl-l"><span class="pn">02</span>출석 보상</p><h2>출석이 쌓이면, 혜택도</h2><p class="pl-s">꾸준히 운동할수록 커지는 보상</p></div><span class="pl-ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="18" width="32" height="8" rx="1.5"/><path d="M11 26v14h26V26M24 18v22"/><path d="M24 18c-2-6-10-9-11.5-4.5S20 18 24 18zM24 18c2-6 10-9 11.5-4.5S28 18 24 18z"/></svg></span></a>
+      <div class="pillar"><div class="pl-t"><p class="pl-l"><span class="pn">03</span>맞춤 상담</p><h2>당신의 이야기부터</h2><p class="pl-s">목표와 고민을 듣고 함께 시작합니다</p></div><span class="pl-ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 9c10.5 0 18 6.4 18 14.5S34.5 38 24 38c-2 0-4-.2-5.8-.7L10 41l2-7.3C8.3 31 6 27.5 6 23.5 6 15.4 13.5 9 24 9z"/><circle cx="17" cy="23.5" r="1.3" class="f"/><circle cx="24" cy="23.5" r="1.3" class="f"/><circle cx="31" cy="23.5" r="1.3" class="f"/></svg></span></div>
     </div>
     <span class="scrollhint" aria-hidden="true">SCROLL</span>
   </div>
