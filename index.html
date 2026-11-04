@@ -1061,6 +1061,14 @@ footer .logo{font-size:22px;color:var(--ink)}
   .rw-stats div{padding:14px}
 }
 
+.rw-use{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
+.rw-use li{display:grid;grid-template-columns:7.5em 24px 1fr;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:16px 20px}
+.rw-use span{font-size:15px;font-weight:700;color:var(--sub)}
+.rw-use i{font-style:normal;color:var(--muted);text-align:center}
+.rw-use b{font-size:clamp(20px,2vw,24px);font-weight:800;color:var(--brand);letter-spacing:-.02em}
+.rw-v4{max-width:420px;justify-self:center;width:100%}
+@media (max-width:860px){.rw-use li{grid-template-columns:6.5em 18px 1fr;padding:14px 16px}.rw-use span{font-size:14px}}
+
 .appshow{margin-top:48px;background:#1b1640;color:#f1effa;display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding:56px 56px 0;overflow:hidden;border-radius:4px}
 .as-txt{padding-bottom:56px}
 .as-txt .en{font-family:var(--serif);font-size:13px;letter-spacing:.24em;color:#b8acff;font-weight:600}
@@ -1342,9 +1350,13 @@ footer .logo{font-size:22px;color:var(--ink)}
         <li class="rw">
           <div class="rw-t"><p class="rw-n"><b>3</b>STEP 3</p><h4>아이템으로 헬스 기간, PT 횟수,<br class="pbr"> 재등록 할인율을 키우세요.</h4><p>좋은 아이템을 장착할수록 출석 1번에 받는 티켓과 재등록 할인율이 올라갑니다. 모은 티켓은 헬스 기간과 PT로 바꿔요.</p>
             <div class="rw-stats"><div><span>재등록 할인</span><b>헬스 13.4%</b><small>PT 6.7%</small></div><div><span>출석 1번에 받는 티켓</span><b>+8.80장</b></div></div>
-            <ul class="rw-ex"><li>티켓 <b>200장</b> = 헬스 <b>10일</b></li><li>티켓 <b>300장</b> = PT <b>1회</b></li></ul>
             <p class="rw-cap">실제 회원의 앱 화면 기준이에요.</p></div>
           <div class="rw-v rw-v3"><figure class="rw-ph"><img src="img/rw-equip.webp" alt="플랜짐 앱 장비보관함: 캐릭터가 설치·착용 아이템을 장착한 모습" loading="lazy"><figcaption>아이템 장착</figcaption></figure><figure class="rw-ph"><img src="img/rw-home.webp" alt="플랜짐 앱 홈: 재등록 할인 PT 6.70% 헬스 13.40%, 1회 출석당 티켓 +8.80장" loading="lazy"><figcaption>재등록 할인율 · 티켓 획득량</figcaption></figure></div>
+        </li>
+        <li class="rw rw4">
+          <div class="rw-t"><p class="rw-n"><b>4</b>STEP 4</p><h4>실제로 혜택을 활용하세요!</h4><p>모은 티켓은 앱에서 바로 헬스 기간이나 PT로 바꿀 수 있어요. 다시 등록할 때는 내가 키운 재등록 할인율이 그대로 적용됩니다.</p>
+            <ul class="rw-use"><li><span>티켓 200장</span><i aria-hidden="true">→</i><b>헬스 +10일</b></li><li><span>티켓 300장</span><i aria-hidden="true">→</i><b>PT +1회</b></li><li><span>재등록할 때</span><i aria-hidden="true">→</i><b>내 할인율 적용</b></li></ul></div>
+          <div class="rw-v rw-v4"><figure class="rw-ph"><img src="img/rw-use.webp" alt="플랜짐 앱 티켓 사용: 헬스 10일 교환 200티켓, PT 1회 교환 300티켓" loading="lazy"><figcaption>앱에서 바로 교환</figcaption></figure></div>
         </li>
       </ol>
     </div>
