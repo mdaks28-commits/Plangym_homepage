@@ -778,28 +778,22 @@ footer .logo{font-size:22px;color:var(--ink)}
 
 .wk-ev{display:inline-block;background:#c8752a;color:#fff;font-family:var(--sans);font-size:11px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-right:6px;vertical-align:2px}
 .wk-dl{color:#c8752a;font-weight:700}
+.wk-slg{list-style:none;margin:0 0 20px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.wk-slg li{background:var(--beige);border-radius:20px;padding:30px 28px 34px;display:flex;flex-direction:column;gap:18px}
+.wk-slg span{font-family:var(--serif);font-size:15px;font-weight:700;color:#c8752a;letter-spacing:.06em}
+.wk-slg b{font-family:var(--serif);font-size:25px;line-height:1.4;letter-spacing:-.02em;color:var(--ink);word-break:keep-all}
+.wk-slg em{font-style:normal;color:var(--brand)}
 .wk-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.wk-c{background:var(--bg,#fff);border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;flex-direction:column}
+.wk-c{background:var(--bg,#fff);border:1px solid var(--line);border-radius:20px;padding:28px 32px;display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .wk-c.on{background:var(--brand);border-color:var(--brand);color:#fff}
 .wk-lv{margin:0;font-size:15px;font-weight:600;color:var(--sub)}
 .wk-lv b{font-family:var(--serif);font-size:36px;color:var(--brand);margin-left:4px;font-variant-numeric:lining-nums}
-.wk-q{margin:6px 0 0;font-size:19px;font-weight:700;letter-spacing:-.02em}
-.wk-for{margin:6px 0 18px;font-size:14px;color:var(--sub)}
-.wk-flow{list-style:none;margin:0;padding:16px 0;border-block:1px solid var(--line);display:grid;gap:10px}
-.wk-flow li{display:flex;gap:14px;font-size:15px;align-items:baseline}
-.wk-flow span{flex:none;width:62px;font-size:13px;font-weight:700;color:var(--brand)}
-.wk-sex{margin:16px 0 0;display:grid;gap:8px}
-.wk-sex div{display:flex;gap:14px;font-size:14px}
-.wk-sex dt{flex:none;width:62px;font-weight:700;color:var(--muted)}
-.wk-sex dd{margin:0}
-.wk-pr{margin:auto 0 0;padding-top:24px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wk-pr{margin:0;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 .wk-pr b{font-family:var(--serif);font-size:38px;color:var(--brand);font-variant-numeric:lining-nums}
 .wk-pr small{font-family:var(--sans);font-size:16px;margin-left:2px}
 .wk-pr span{font-size:14px;color:var(--sub)}
-.wk-c.on .wk-lv,.wk-c.on .wk-for,.wk-c.on .wk-pr span,.wk-c.on .wk-sex dt{color:rgba(255,255,255,.7)}
+.wk-c.on .wk-lv,.wk-c.on .wk-pr span{color:rgba(255,255,255,.7)}
 .wk-c.on .wk-lv b,.wk-c.on .wk-pr b{color:#e9c98a}
-.wk-c.on .wk-flow{border-color:rgba(255,255,255,.2)}
-.wk-c.on .wk-flow span{color:#e9c98a}
 .wk-inc{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:16px;background:var(--soft)}
 .wk-inc li{padding:18px 20px;font-size:14px;color:var(--sub)}
 .wk-inc li+li{border-left:1px solid var(--line)}
@@ -817,7 +811,7 @@ footer .logo{font-size:22px;color:var(--ink)}
 .evpill:hover{background:#fff}
 .nv-ev{font-style:normal;font-size:10px;font-weight:800;color:#c8752a;margin-left:4px}
 .tr-ev{display:inline-block;margin-top:8px;align-self:flex-start;font-size:13px;font-weight:700;color:#c8752a;background:rgba(200,117,42,.1);padding:5px 12px;border-radius:999px}
-@media (max-width:760px){.wk-cards{grid-template-columns:1fr}.wk-c{padding:24px 20px}.wk-inc{grid-template-columns:1fr}.wk-inc li+li{border-left:0;border-top:1px solid var(--line)}.wk-inc li{padding:14px 18px}.wk-btn{width:100%;text-align:center}.evpill{font-size:12.5px;gap:8px}.wk-pr b{font-size:32px}}
+@media (max-width:760px){.wk-slg{grid-template-columns:1fr;gap:12px}.wk-slg li{padding:22px 22px 24px;gap:10px}.wk-slg b{font-size:21px}.wk-slg b br{display:none}.wk-cards{grid-template-columns:1fr}.wk-c{padding:22px 20px;flex-direction:column;align-items:flex-start;gap:4px}.wk-inc{grid-template-columns:1fr}.wk-inc li+li{border-left:0;border-top:1px solid var(--line)}.wk-inc li{padding:14px 18px}.wk-btn{width:100%;text-align:center}.evpill{font-size:12.5px;gap:8px}.wk-pr b{font-size:32px}}
 
 .apx-tabs{justify-content:center}
 .apx{margin-top:28px}
@@ -1243,7 +1237,7 @@ footer .logo{font-size:22px;color:var(--ink)}
   <div class="bg"><img src="img/p01.webp" alt="" fetchpriority="high"></div>
   <div class="wrap">
     <div class="hcopy">
-      <a class="evpill" href="#pt-weekend"><b>EVENT</b><span>주말 오전 PT 초급 8회 30만원부터 · 11/30 마감</span><i>→</i></a>
+      <a class="evpill" href="#pt-weekend"><b>EVENT</b><span>강정우 트레이너 주말 PT 특가 · 11/30 마감</span><i>→</i></a>
       <h1>출석으로<br>몸 만들고,<br><em>돈도 벌고</em></h1>
       <p class="hloc">강동구 암사동 · 회원 50명 한정 헬스 · PT</p>
       <p class="lead plus"><span class="pc">헬스 기간<b>+</b></span><span class="pc">PT<b>+</b></span><span class="pc">체력<b>+</b></span><span class="pc">몸매<b>+</b></span></p>
@@ -1536,7 +1530,7 @@ footer .logo{font-size:22px;color:var(--ink)}
         </tbody>
       </table>
       <p class="note">가격은 변동될 수 있습니다.</p>
-      <a class="wk-link" href="#pt-weekend"><span>사용법을 넘어 루틴까지 배우고 싶다면?</span><b>주말 PT 초급 8회 보기 →</b></a>
+      <a class="wk-link" href="#pt-weekend"><span>헬스장도, 근육도 100% 활용하고 싶다면?</span><b>주말 PT 특가 보기 →</b></a>
     </div>
   </div>
 </section>
@@ -1641,40 +1635,22 @@ footer .logo{font-size:22px;color:var(--ink)}
     </div>
 
     <div class="part wk" id="pt-weekend">
-      <div class="st"><p class="en">04 · <span class="wk-ev">EVENT</span> 주말만 PT</p><h3>배우고 끝? 이제 혼자 운동하세요.</h3><p>토·일요일 오전에만 수업하는 짧고 굵은 PT. 기본기를 배우고, 평일엔 배운 대로 혼자 운동합니다.<br><b class="wk-dl">11월 30일까지만 신청받습니다.</b></p></div>
+      <div class="st"><p class="en">04 · <span class="wk-ev">EVENT</span> 주말만 PT</p><h3>강정우 트레이너 주말 PT 특가</h3><p>토요일, 일요일만 수업합니다.<br><b class="wk-dl">11월 30일까지만 신청받습니다.</b></p></div>
+      <ol class="wk-slg">
+        <li><span>01</span><b>헬스장 <em>100%</em> 활용하기</b></li>
+        <li><span>02</span><b>근육 <em>100%</em> 활용하기</b></li>
+        <li><span>03</span><b>등과 어깨가 자라날 <br>토대 만들기 PT</b></li>
+      </ol>
       <div class="wk-cards">
-        <div class="wk-c">
-          <p class="wk-lv">초급 <b>8회</b></p>
-          <p class="wk-q">기초부터 차근차근, 혼자 운동하는 힘을 만듭니다.</p>
-          <p class="wk-for">운동 왕초보 · 머신 사용법과 기본 자세부터</p>
-          <ol class="wk-flow">
-            <li><span>1–2회</span>머신 세팅 · 전신 기본 동작</li>
-            <li><span>3–4회</span>덤벨 · 힙힌지 · 좌우 밸런스</li>
-            <li><span>5–6회</span>케이블 · 적정 중량 찾기</li>
-            <li><span>7–8회</span>상체 · 하체 2분할 루틴 완성</li>
-          </ol>
-          <dl class="wk-sex"><div><dt>남성</dt><dd>벤치프레스 · 스쿼트 · 데드리프트 기초</dd></div><div><dt>여성</dt><dd>힙 운동 · 등 · 어깨 · 하체 루틴</dd></div></dl>
-          <p class="wk-pr"><b>300,000<small>원</small></b><span>회당 37,500원</span></p>
-        </div>
-        <div class="wk-c on">
-          <p class="wk-lv">중급 <b>16회</b></p>
-          <p class="wk-q">정체기를 넘어, 나만의 루틴으로.</p>
-          <p class="wk-for">기본 운동은 익혔지만 강도와 변화가 아쉬운 분</p>
-          <ol class="wk-flow">
-            <li><span>1–8회</span>부위별 집중 훈련과 운동 기록</li>
-            <li><span>9–13회</span>약점 보완 · 분할 루틴 만들기</li>
-            <li><span>14–16회</span>강도 높은 세트 방식과 피로 관리</li>
-          </ol>
-          <dl class="wk-sex"><div><dt>남성</dt><dd>가슴 · 등 · 어깨 · 하체 4분할</dd></div><div><dt>여성</dt><dd>힙 · 상체 · 하체 3분할</dd></div></dl>
-          <p class="wk-pr"><b>550,000<small>원</small></b><span>회당 약 34,400원</span></p>
-        </div>
+        <div class="wk-c"><p class="wk-lv"><b>8</b>회</p><p class="wk-pr"><b>300,000<small>원</small></b><span>회당 37,500원</span></p></div>
+        <div class="wk-c on"><p class="wk-lv"><b>16</b>회</p><p class="wk-pr"><b>550,000<small>원</small></b><span>회당 약 34,400원</span></p></div>
       </div>
       <ul class="wk-inc">
         <li><b>수업 당일</b>개인운동 포함</li>
         <li><b>헬스 추가</b>1개월 +5만원 · 2개월 +8만원</li>
         <li><b>기존 헬스 회원</b>추가 결제 없음</li>
       </ul>
-      <div class="wk-foot"><p>담당 <a href="#trainers">강정우 트레이너</a> · 토·일요일 오전만 수업 · 상담은 카카오톡 · 전화 <a href="tel:0269537017">02-6953-7017</a></p><a class="wk-btn" href="http://pf.kakao.com/_lMxgLxj/chat" target="_blank" rel="noopener">주말 PT 상담하기</a></div>
+      <div class="wk-foot"><p>담당 <a href="#trainers">강정우 트레이너</a> · 토요일, 일요일만 수업 · 상담은 카카오톡 · 전화 <a href="tel:0269537017">02-6953-7017</a></p><a class="wk-btn" href="http://pf.kakao.com/_lMxgLxj/chat" target="_blank" rel="noopener">주말 PT 상담하기</a></div>
     </div>
 
     <div class="part" id="pt-price">
